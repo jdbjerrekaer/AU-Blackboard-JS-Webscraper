@@ -1,0 +1,1335 @@
+<!DOCTYPE HTML><!-- listContent.jsp -->
+
+
+<html lang="en-GB">
+
+<head>
+  <title>Course plan &ndash; E20 - Algorithms and Data Structures [...</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta id="request-method" name="request-method" content="GET">
+  <meta name="author" content="Blackboard">
+  <meta name="copyright"
+    content="&copy; 1997-2020 Blackboard Inc. All Rights Reserved. US Patent No. 7,493,396 and 7,558,853. Additional Patents Pending.">
+  <meta name="keywords" content="Blackboard">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <script
+    type="text/javascript">(window.NREUM || (NREUM = {})).loader_config = { licenseKey: "e99ceaa32b", applicationID: "27090811" }; window.NREUM || (NREUM = {}), __nr_require = function (e, n, t) { function r(t) { if (!n[t]) { var i = n[t] = { exports: {} }; e[t][0].call(i.exports, function (n) { var i = e[t][1][n]; return r(i || n) }, i, i.exports) } return n[t].exports } if ("function" == typeof __nr_require) return __nr_require; for (var i = 0; i < t.length; i++)r(t[i]); return r }({ 1: [function (e, n, t) { function r() { } function i(e, n, t) { return function () { return o(e, [u.now()].concat(c(arguments)), n ? null : this, t), n ? void 0 : this } } var o = e("handle"), a = e(5), c = e(6), f = e("ee").get("tracer"), u = e("loader"), s = NREUM; "undefined" == typeof window.newrelic && (newrelic = s); var d = ["setPageViewName", "setCustomAttribute", "setErrorHandler", "finished", "addToTrace", "inlineHit", "addRelease"], p = "api-", l = p + "ixn-"; a(d, function (e, n) { s[n] = i(p + n, !0, "api") }), s.addPageAction = i(p + "addPageAction", !0), s.setCurrentRouteName = i(p + "routeName", !0), n.exports = newrelic, s.interaction = function () { return (new r).get() }; var m = r.prototype = { createTracer: function (e, n) { var t = {}, r = this, i = "function" == typeof n; return o(l + "tracer", [u.now(), e, t], r), function () { if (f.emit((i ? "" : "no-") + "fn-start", [u.now(), r, i], t), i) try { return n.apply(this, arguments) } catch (e) { throw f.emit("fn-err", [arguments, this, e], t), e } finally { f.emit("fn-end", [u.now()], t) } } } }; a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function (e, n) { m[n] = i(l + n) }), newrelic.noticeError = function (e, n) { "string" == typeof e && (e = new Error(e)), o("err", [e, u.now(), !1, n]) } }, {}], 2: [function (e, n, t) { function r(e, n) { var t = e.getEntries(); t.forEach(function (e) { "first-paint" === e.name ? d("timing", ["fp", Math.floor(e.startTime)]) : "first-contentful-paint" === e.name && d("timing", ["fcp", Math.floor(e.startTime)]) }) } function i(e, n) { var t = e.getEntries(); t.length > 0 && d("lcp", [t[t.length - 1]]) } function o(e) { e.getEntries().forEach(function (e) { e.hadRecentInput || d("cls", [e]) }) } function a(e) { if (e instanceof m && !g) { var n = Math.round(e.timeStamp), t = { type: e.type }; n <= p.now() ? t.fid = p.now() - n : n > p.offset && n <= Date.now() ? (n -= p.offset, t.fid = p.now() - n) : n = p.now(), g = !0, d("timing", ["fi", n, t]) } } function c(e) { d("pageHide", [p.now(), e]) } if (!("init" in NREUM && "page_view_timing" in NREUM.init && "enabled" in NREUM.init.page_view_timing && NREUM.init.page_view_timing.enabled === !1)) { var f, u, s, d = e("handle"), p = e("loader"), l = e(4), m = NREUM.o.EV; if ("PerformanceObserver" in window && "function" == typeof window.PerformanceObserver) { f = new PerformanceObserver(r); try { f.observe({ entryTypes: ["paint"] }) } catch (v) { } u = new PerformanceObserver(i); try { u.observe({ entryTypes: ["largest-contentful-paint"] }) } catch (v) { } s = new PerformanceObserver(o); try { s.observe({ type: "layout-shift", buffered: !0 }) } catch (v) { } } if ("addEventListener" in document) { var g = !1, y = ["click", "keydown", "mousedown", "pointerdown", "touchstart"]; y.forEach(function (e) { document.addEventListener(e, a, !1) }) } l(c) } }, {}], 3: [function (e, n, t) { function r(e, n) { if (!i) return !1; if (e !== i) return !1; if (!n) return !0; if (!o) return !1; for (var t = o.split("."), r = n.split("."), a = 0; a < r.length; a++)if (r[a] !== t[a]) return !1; return !0 } var i = null, o = null, a = /Version\/(\S+)\s+Safari/; if (navigator.userAgent) { var c = navigator.userAgent, f = c.match(a); f && c.indexOf("Chrome") === -1 && c.indexOf("Chromium") === -1 && (i = "Safari", o = f[1]) } n.exports = { agent: i, version: o, match: r } }, {}], 4: [function (e, n, t) { function r(e) { function n() { e(a && document[a] ? document[a] : document[i] ? "hidden" : "visible") } "addEventListener" in document && o && document.addEventListener(o, n, !1) } n.exports = r; var i, o, a; "undefined" != typeof document.hidden ? (i = "hidden", o = "visibilitychange", a = "visibilityState") : "undefined" != typeof document.msHidden ? (i = "msHidden", o = "msvisibilitychange") : "undefined" != typeof document.webkitHidden && (i = "webkitHidden", o = "webkitvisibilitychange", a = "webkitVisibilityState") }, {}], 5: [function (e, n, t) { function r(e, n) { var t = [], r = "", o = 0; for (r in e) i.call(e, r) && (t[o] = n(r, e[r]), o += 1); return t } var i = Object.prototype.hasOwnProperty; n.exports = r }, {}], 6: [function (e, n, t) { function r(e, n, t) { n || (n = 0), "undefined" == typeof t && (t = e ? e.length : 0); for (var r = -1, i = t - n || 0, o = Array(i < 0 ? 0 : i); ++r < i;)o[r] = e[n + r]; return o } n.exports = r }, {}], 7: [function (e, n, t) { n.exports = { exists: "undefined" != typeof window.performance && window.performance.timing && "undefined" != typeof window.performance.timing.navigationStart } }, {}], ee: [function (e, n, t) { function r() { } function i(e) { function n(e) { return e && e instanceof r ? e : e ? f(e, c, o) : o() } function t(t, r, i, o) { if (!p.aborted || o) { e && e(t, r, i); for (var a = n(i), c = v(t), f = c.length, u = 0; u < f; u++)c[u].apply(a, r); var d = s[w[t]]; return d && d.push([b, t, r, a]), a } } function l(e, n) { h[e] = v(e).concat(n) } function m(e, n) { var t = h[e]; if (t) for (var r = 0; r < t.length; r++)t[r] === n && t.splice(r, 1) } function v(e) { return h[e] || [] } function g(e) { return d[e] = d[e] || i(t) } function y(e, n) { u(e, function (e, t) { n = n || "feature", w[t] = n, n in s || (s[n] = []) }) } var h = {}, w = {}, b = { on: l, addEventListener: l, removeEventListener: m, emit: t, get: g, listeners: v, context: n, buffer: y, abort: a, aborted: !1 }; return b } function o() { return new r } function a() { (s.api || s.feature) && (p.aborted = !0, s = p.backlog = {}) } var c = "nr@context", f = e("gos"), u = e(5), s = {}, d = {}, p = n.exports = i(); p.backlog = s }, {}], gos: [function (e, n, t) { function r(e, n, t) { if (i.call(e, n)) return e[n]; var r = t(); if (Object.defineProperty && Object.keys) try { return Object.defineProperty(e, n, { value: r, writable: !0, enumerable: !1 }), r } catch (o) { } return e[n] = r, r } var i = Object.prototype.hasOwnProperty; n.exports = r }, {}], handle: [function (e, n, t) { function r(e, n, t, r) { i.buffer([e], r), i.emit(e, n, t) } var i = e("ee").get("handle"); n.exports = r, r.ee = i }, {}], id: [function (e, n, t) { function r(e) { var n = typeof e; return !e || "object" !== n && "function" !== n ? -1 : e === window ? 0 : a(e, o, function () { return i++ }) } var i = 1, o = "nr@id", a = e("gos"); n.exports = r }, {}], loader: [function (e, n, t) { function r() { if (!x++) { var e = E.info = NREUM.info, n = l.getElementsByTagName("script")[0]; if (setTimeout(s.abort, 3e4), !(e && e.licenseKey && e.applicationID && n)) return s.abort(); u(w, function (n, t) { e[n] || (e[n] = t) }); var t = a(); f("mark", ["onload", t + E.offset], null, "api"), f("timing", ["load", t]); var r = l.createElement("script"); r.src = "https://" + e.agent, n.parentNode.insertBefore(r, n) } } function i() { "complete" === l.readyState && o() } function o() { f("mark", ["domContent", a() + E.offset], null, "api") } function a() { return O.exists && performance.now ? Math.round(performance.now()) : (c = Math.max((new Date).getTime(), c)) - E.offset } var c = (new Date).getTime(), f = e("handle"), u = e(5), s = e("ee"), d = e(3), p = window, l = p.document, m = "addEventListener", v = "attachEvent", g = p.XMLHttpRequest, y = g && g.prototype; NREUM.o = { ST: setTimeout, SI: p.setImmediate, CT: clearTimeout, XHR: g, REQ: p.Request, EV: p.Event, PR: p.Promise, MO: p.MutationObserver }; var h = "" + location, w = { beacon: "bam.nr-data.net", errorBeacon: "bam.nr-data.net", agent: "js-agent.newrelic.com/nr-1177.min.js" }, b = g && y && y[m] && !/CriOS/.test(navigator.userAgent), E = n.exports = { offset: c, now: a, origin: h, features: {}, xhrWrappable: b, userAgent: d }; e(1), e(2), l[m] ? (l[m]("DOMContentLoaded", o, !1), p[m]("load", r, !1)) : (l[v]("onreadystatechange", i), p[v]("onload", r)), f("mark", ["firstbyte", c], null, "api"); var x = 0, O = e(7) }, {}], "wrap-function": [function (e, n, t) { function r(e) { return !(e && e instanceof Function && e.apply && !e[a]) } var i = e("ee"), o = e(6), a = "nr@original", c = Object.prototype.hasOwnProperty, f = !1; n.exports = function (e, n) { function t(e, n, t, i) { function nrWrapper() { var r, a, c, f; try { a = this, r = o(arguments), c = "function" == typeof t ? t(r, a) : t || {} } catch (u) { p([u, "", [r, a, i], c]) } s(n + "start", [r, a, i], c); try { return f = e.apply(a, r) } catch (d) { throw s(n + "err", [r, a, d], c), d } finally { s(n + "end", [r, a, f], c) } } return r(e) ? e : (n || (n = ""), nrWrapper[a] = e, d(e, nrWrapper), nrWrapper) } function u(e, n, i, o) { i || (i = ""); var a, c, f, u = "-" === i.charAt(0); for (f = 0; f < n.length; f++)c = n[f], a = e[c], r(a) || (e[c] = t(a, u ? c + i : i, o, c)) } function s(t, r, i) { if (!f || n) { var o = f; f = !0; try { e.emit(t, r, i, n) } catch (a) { p([a, t, r, i]) } f = o } } function d(e, n) { if (Object.defineProperty && Object.keys) try { var t = Object.keys(e); return t.forEach(function (t) { Object.defineProperty(n, t, { get: function () { return e[t] }, set: function (n) { return e[t] = n, n } }) }), n } catch (r) { p([r]) } for (var i in e) c.call(e, i) && (n[i] = e[i]); return n } function p(n) { try { e.emit("internal-error", n) } catch (t) { } } return e || (e = i), t.inPlace = u, t.flag = a, t } }, {}] }, {}, ["loader"]);</script>
+  <link rel="SHORTCUT ICON" type="image/x-icon" href="/ui/bb-icon2.ico">
+  <link rel="stylesheet" type="text/css" href="/common/shared.css?v=3700.0.9-rel.14+4205da6" id="css_0">
+  <link rel="stylesheet" type="text/css" href="/branding/themes/au-2016-20/theme.css?v=3700.0.9-rel.14+4205da6"
+    id="css_1">
+  <link rel="stylesheet" type="text/css" href="/branding/themes/au-2016-20/app_nav.css?v=3700.0.9-rel.14+4205da6"
+    id="css_2">
+  <link rel="stylesheet" type="text/css"
+    href="/webapps/videointegration/css/video-integration.css?v=3700.0.9-rel.14+4205da6_3700.0.9-rel.14+4205da6"
+    id="css_3">
+  <link rel="stylesheet" type="text/css"
+    href="/webapps/allyintegration/css/ally-integration.css?v=3700.0.9-rel.14+4205da6_3700.0.9-rel.14+4205da6"
+    id="css_4">
+  <style type="text/css" id="courseMenuCustomCSS">
+    .noteditmode .listCm .courseMenu a:hover span,
+    .noteditmode .listCm .courseMenu a:focus span {
+      color: #2075a3 !important;
+    }
+
+    #courseMenuPalette div.navPaletteContent ul li a,
+    #courseMenuPalette h3 a,
+    #previewCourseMenu h3 a,
+    .navPaletteContent h3 a.submenuLink:before,
+    .navPaletteContent h3 a.submenuLink_active:before,
+    #courseMenuPalette div.navPaletteContent ul li a span,
+    #courseMenuPalette .navPaletteContent .subhead {
+      color: #2075a3;
+      text-shadow: none;
+      /*should only be 2012*/
+    }
+
+    #courseMenuPalette ul.courseMenu li.divider hr {
+      background-color: #2075a3;
+    }
+
+    #courseMenuPalette ul.courseMenu li h4 {
+      color: #2075a3;
+    }
+
+    #courseMenuPalette h4.treehead {
+      color: #2075a3;
+    }
+
+    #courseMenuPalette div.navPaletteContent {
+      background-color: transparent;
+    }
+
+    #courseMenuPalette_contents li {
+      background-color: transparent;
+    }
+
+    /*Active course menu view bubble stem*/
+    #courseMenuPalette .actionBarMicro .active>a:after {
+      border-bottom-color: transparent;
+    }
+
+    /* 2016 Theme overide deault blue and white on course creation*/
+
+
+
+    /* if theme is classic */
+  </style>
+  <style type="text/css">
+    .topGlobalLinks a.home {
+      background-image: url(/images/console/icons/home_0.gif)
+    }
+
+    .bottom-buttons-home a {
+      background-image: url(/images/console/icons/home_0.gif);
+      background-repeat: no-repeat;
+      background-position: 50% 0
+    }
+
+    .topGlobalLinks a.help {
+      background-image: url(/images/console/icons/help_0.gif)
+    }
+
+    .bottom-buttons-help a {
+      background-image: url(/images/console/icons/help_0.gif);
+      background-repeat: no-repeat;
+      background-position: 50% 0
+    }
+
+    .topGlobalLinks a.logout {
+      background-image: url(/images/console/icons/logout_0.gif)
+    }
+
+    .global-nav-bar .logout-link,
+    .global-nav-bar .logout-link:hover,
+    .global-nav-bar .logout-link:focus {
+      background-image: url(/images/console/icons/logout_0.gif);
+      background-repeat: no-repeat;
+      background-position: 50% 0
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" media="print" href="/ui/styles/print.css?v=3700.0.9-rel.14+4205da6">
+  <script type="text/javascript" src="/javascript/i18n.js?v=3700.0.9-rel.14+4205da6"></script>
+  <script language='javascript' type='text/javascript'>
+
+    var JS_RESOURCES = new Object();
+
+    function _init_bundle_JS_RESOURCES() {
+
+      JS_RESOURCES['validation.email'] = 'A fully qualified email address (for example, info@blackboard.com) must be entered.';
+      JS_RESOURCES['validation.radio.required'] = 'Make a selection to continue.';
+      JS_RESOURCES['assessment.incomplete.confirm.backtrackProhibited.survey'] = 'The following questions may be incomplete:\n {0}\nClick cancel to return to the survey. Click OK to save the incomplete answer.';
+      JS_RESOURCES['common.list.separator.comma'] = '{0}, {1}';
+      JS_RESOURCES['active.filter.search.terms'] = 'Search Terms';
+      JS_RESOURCES['validation.points.decimal.places.error.location'] = 'Point Values are limited to five decimal places: {0}.';
+      JS_RESOURCES['validation.maximum_length.plural'] = 'Must not contain more than {1} characters: {0}.\nReduce the size of the input by {2} characters.';
+      JS_RESOURCES['assessment.incomplete.confirm.backtrackProhibited'] = 'The following questions may be incomplete:\n {0}\nClick cancel to return to the test. Click OK to save the incomplete answer.';
+      JS_RESOURCES['validation.multiSelect.minItems'] = 'Multiselect box should contain at least {0} number of items.';
+      JS_RESOURCES['validation.cmp_field.required'] = 'A value must be provided for {0}\nwhen {1} field is not empty';
+      JS_RESOURCES['warning.email'] = 'Email address is a recommended field. Users will be unable to use parts of the system without an email address.';
+      JS_RESOURCES['validation.maximum_length.no_name.singular'] = 'Must not contain more than {0} characters.\nReduce the size of the input by one character.';
+      JS_RESOURCES['validation.multiSelect.maxItems'] = 'Multiselect box should not contain more than {0} number of items.';
+      JS_RESOURCES['validation.number'] = 'A valid numeric value must be entered: {0}.';
+      JS_RESOURCES['portalmodule.section.remove'] = 'Delete: {0}?';
+      JS_RESOURCES['show.helptext'] = 'Show Help Text';
+      JS_RESOURCES['validation.date.required'] = 'A complete date value must be provided: {0}.';
+      JS_RESOURCES['validation.password'] = 'Password cannot be empty or contain only spaces.';
+      JS_RESOURCES['validation.mismatch'] = 'The values entered do not match: {0}.\nConfirm: {0}.';
+      JS_RESOURCES['validation.percent'] = 'A valid per-cent value between 0 and 100 must be entered.';
+      JS_RESOURCES['validation.maximum_length.no_name.plural'] = 'Must not contain more than {0} characters.\nReduce the size of the input by {1} characters.';
+      JS_RESOURCES['field_name.substitute'] = '\'\'{0}\'\' input field';
+      JS_RESOURCES['validation.invalid_value'] = 'Invalid numeric value provided: {0}.';
+      JS_RESOURCES['validation.required'] = 'A value must be provided: {0}.';
+      JS_RESOURCES['validate.alignment.missing.content'] = 'You selected alignments, but did not select any alignable content to copy.';
+      JS_RESOURCES['active.filter.free.form.text.blank'] = 'Specify a value for the search text field';
+      JS_RESOURCES['validation.system_role.reserve'] = '"bb" is not permitted at the beginning of a role ID.';
+      JS_RESOURCES['validation.date_past'] = 'The end date cannot be earlier than the start date.';
+      JS_RESOURCES['confirm.delete_item_value'] = 'This item {0} will be deleted. Continue?';
+      JS_RESOURCES['validation.invalid_chars'] = 'Contains illegal characters: {0}.\nDelete these characters: {1}';
+      JS_RESOURCES['hide.helptext'] = 'Hide Help Text';
+      JS_RESOURCES['validate.range.lessthen.str'] = 'Less Than {0}';
+      JS_RESOURCES['validate.login.invalid.username.or.pass'] = 'Enter a username and password.';
+      JS_RESOURCES['validation.date_past.confirm'] = 'The time is in the past.\nContinue with this time?';
+      JS_RESOURCES['validation.negative'] = 'A valid non-negative value must be entered: {0}.';
+      JS_RESOURCES['validation.url'] = 'A valid URL (for example, http://www.myuniversity.ac.uk) must be entered.';
+      JS_RESOURCES['validate.range.overlap'] = 'criteria ({0}) overlaps criteria ({1}).';
+      JS_RESOURCES['validate.range.between.str'] = 'Between {0} and {1}';
+      JS_RESOURCES['validation.portal.tool.items.remove'] = 'Delete: {0}?';
+      JS_RESOURCES['validation.association.refresh.confirm'] = 'The associated items information might have been updated.\nClick \'OK\' to refresh the list or click \'Cancel\' to keep the current page.';
+      JS_RESOURCES['validate.enrolloptions.error.codeconflict'] = 'The Access Code Enrolment option conflicts with the selection of {instructor} Led enrolment.';
+      JS_RESOURCES['validation.points.decimal.places'] = 'Point Values are limited to five decimal places.';
+      JS_RESOURCES['list.checkToSelectAllItems'] = 'Tick to select all items';
+      JS_RESOURCES['validation.option.required'] = 'At least one option must be selected from the list.';
+      JS_RESOURCES['active.filter.changed.alert'] = 'criteria now contain';
+      JS_RESOURCES['vtbe.artifact.footer.validate.nameIfSaveArtifact'] = 'Specify a Name in order to Save as a Reusable Object.';
+      JS_RESOURCES['validate.invalidate.number'] = 'Please input valid number instead of {0}.';
+      JS_RESOURCES['validation.valid_course_id'] = 'Course ID contains illegal characters or multibyte characters.';
+      JS_RESOURCES['assessment.incomplete.confirm'] = 'The following questions may be incomplete:\n {0}\nClick cancel to return to the test. Click OK to submit assessment.';
+      JS_RESOURCES['validate.enrolloptions.error.nooption'] = 'Warning: Choose either the {instructor} Led or the Self-Enrolment option.';
+      JS_RESOURCES['validation.date_equal'] = 'The start date cannot be equal to the end date.';
+      JS_RESOURCES['validation.cmp_field.rejected'] = 'The {0} cannot be used without a corresponding {1} value.';
+      JS_RESOURCES['validation.time.required'] = 'A complete time value must be provided: {0}.';
+      JS_RESOURCES['validation.integer_number'] = 'A valid integer numeric value must be entered: {0}.';
+      JS_RESOURCES['validation.maximum_length'] = 'Must not contain more than 255 characters';
+      JS_RESOURCES['validate.enrolloptions.error.emailrequestconflict'] = 'The selected email enrolment option conflicts with the self-enrolment selection.';
+      JS_RESOURCES['validate.range.morethen.str'] = 'More Than {0}';
+      JS_RESOURCES['invalid_char.space'] = 'space';
+      JS_RESOURCES['notification.submit'] = 'Action already submitted.\nWait until the action is complete.';
+      JS_RESOURCES['validation.plain_text.confirm'] = 'To display equations correctly in this document, Smart Text or HTML format must be selected.\nClick \'OK\' to save in selected Plain Text format or click \'Cancel\' to select a new format.';
+      JS_RESOURCES['validation.allow_negtive.percent'] = 'A valid per-cent value between -100 and 100 must be entered.';
+      JS_RESOURCES['invalid_char.comma'] = 'comma';
+      JS_RESOURCES['confirm.remove_item'] = 'This action is final and cannot be undone. Continue?';
+      JS_RESOURCES['list.uncheckToDeselectAllItems'] = 'Untick to deselect all items';
+      JS_RESOURCES['validation.maximum_length.singular'] = 'Must not contain more than {1} characters: {0}.\nReduce the size of the input by one character.';
+      JS_RESOURCES['validation.rubric.decimalplaces'] = 'Too many decimal places. Maximum is five.';
+      JS_RESOURCES['vtbe.artifact.footer.validate.saveLocationIfSaveArtifact'] = 'Specify a location for the Reusable Object.';
+      JS_RESOURCES['validation.minimum_length'] = 'A minimum of {0} characters must be entered: {1}.';
+      JS_RESOURCES['assessment.incomplete.confirm.survey'] = 'The following questions may be incomplete:\n {0}\nClick cancel to return to the survey. Click OK to submit assessment.';
+      JS_RESOURCES['validation.image_type'] = 'Unknown image type: {0}. Image may not display correctly.';
+      JS_RESOURCES['validate.invalidate.number.space'] = 'Space';
+
+      JS_RESOURCES.getString = i18n_get_string;
+      JS_RESOURCES.getFormattedString = i18n_get_formatted_string;
+
+    }
+
+    _init_bundle_JS_RESOURCES();
+
+  </script>
+  <script language='javascript' type='text/javascript'>
+
+    var LOCALE_SETTINGS = new Object();
+
+    function _init_bundle_LOCALE_SETTINGS() {
+
+      LOCALE_SETTINGS['LOCALE_SETTINGS.ADDRESS_FIELD_ORDER'] = 'STREET_1 STREET_2 CITY STATE ZIP_CODE COUNTRY';
+      LOCALE_SETTINGS['number_format.exponent'] = 'eE';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.YEAR_CHARACTER.03255'] = '';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN.2'] = '{1}';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_MONTH.03255'] = 'ddd';
+      LOCALE_SETTINGS['BBI18N.SOLARIS_CHARSET'] = 'ISO8859-1';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN.1'] = '{0}';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.internal_date_format'] = 'dd/MM/yy';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_MONTH.03259'] = 'MMMM yyyy';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.TIME_ORDER.00519'] = 'HMP';
+      LOCALE_SETTINGS['float.format'] = '^([0-9]{1,3}(\\,[0-9]{3})*(\\.[0-9]+)?|\\.[0-9]+)?$';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.SORT_COLUMN'] = 'familyName';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.SHORT'] = '{1} {3}';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_SHORT.02097'] = 'MON TUE WED THU FRI SAT SUN';
+      LOCALE_SETTINGS['float.allow.negative.format'] = '^((([-]?[0-9]{1,3}(\\,[0-9]{3})*)|[-]?[0-9]*)(\\.[0-9]+)?|\\.[0-9]+)?$';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TYPE'] = 'GREGORIAN';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.GIVEN_INITIAL_FAMILY_NAME'] = '{4} {3}';
+      LOCALE_SETTINGS['efloat.format'] = '^[+-]?[0-9]*(\\.[0-9]+)?([eE][+-]?[0-9]+)?$';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_WEEK.03260'] = 'd MMM[ yyyy]{\'&#8212;\'d MMM, yyyy}';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_FULL.02100'] = 'January February March April May June July August September October November December';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.NUMBERS_HIJRI_LOCALIZED.00521'] = 'NO';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.LONG'] = '{0} {1} {2} {3}';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_FULL_HIJRI.02100'] = 'Muḥarram,Ṣafar,Rabīʿ\'al-Awwal,Rabīʿ\'ath-Thānī,Jumādā\'al-Ūlā,Jumādā\'ath-Thāniya,Rajab,Shaʿbān,Ramaḍān,Shawwāl,Dhū\'al-Qaʿda,Dhū\'al-Ḥijja';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.REPORT_FONT_NAME.03169'] = 'ARIAL.TTF';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.WORK_FIELD_ORDER'] = 'JOB_TITLE DEPARTMENT COMPANY B_PHONE_1 B_PHONE_2 B_FAX';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.GREETING'] = 'Welcome, {1}';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_SHORT.00520'] = 'Jan Feb  Mar Apr  May Jun Jul Aug Sep Oct Nov Dec';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.REPORT_FONT_SIZE.03168'] = '8';
+      LOCALE_SETTINGS['number_format.thousands_sep'] = ',';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_WEEK.03256'] = 'ddd d/M';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.SHORT_SURNAME'] = '{3}, {1}';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.AM_PM.00522'] = 'AM PM';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.DATE_ORDER.00519'] = 'DMY';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.PHONE_FIELD_ORDER'] = 'H_PHONE_1 H_PHONE_2 H_FAX M_PHONE';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_MIN.02099'] = 'MON TUE WED THU FRI SAT SUN';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.24HR_SUPPORT.03208'] = '1';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.REPORT_FONT_PATH.03170'] = 'C:/WINNT/Fonts';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.FIRST_DAY_OF_WEEK.03207'] = '1';
+      LOCALE_SETTINGS['BBI18N.WINDOWS_CHARSET'] = 'ISO-8859-1';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_SHORT_HIJRI.00520'] = 'Muḥarram,Ṣafar,Rabīʿ\'I,Rabīʿ\'II,Jumādā\'I,Jumādā\'II,Rajab,Shaʿbān,Ramaḍān,Shawwāl,Dhū\'al-Qaʿda,Dhū\'al-Ḥijja';
+      LOCALE_SETTINGS['BBI18N.LINUX_CHARSET'] = 'iso88591';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_CHARACTER.03253'] = '';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_CHARACTER.03254'] = '';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN_ORDER'] = 'title,givenName,middleName,familyName,suffix,otherName';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_DAY.03258'] = 'dddd, d MMM, yyyy';
+      LOCALE_SETTINGS['number_format.decimal_point'] = '.';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.DAYS.00521'] = '01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_FULL.02098'] = 'Monday Tuesday Wednesday Thursday Friday Saturday Sunday';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.date_display_pattern'] = 'DD/MM/YY';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.EXTENDED_SURNAME'] = '{3}';
+      LOCALE_SETTINGS['thousand.sep.format'] = ',';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.NUMBERS_HIJRI.00521'] = '0 1 2 3 4 5 6 7 8 9';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.ADDRESS_ORDER.07832'] = 'street,city,region,postal_code,country';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_DAY.03257'] = 'dddd d/M';
+
+      LOCALE_SETTINGS.getString = i18n_get_string;
+      LOCALE_SETTINGS.getFormattedString = i18n_get_formatted_string;
+
+    }
+
+    _init_bundle_LOCALE_SETTINGS();
+
+  </script>
+
+  <script language='javascript' type='text/javascript'>
+
+    var LOCALE_SETTINGS = new Object();
+
+    function _init_bundle_LOCALE_SETTINGS() {
+
+      LOCALE_SETTINGS['LOCALE_SETTINGS.ADDRESS_FIELD_ORDER'] = 'STREET_1 STREET_2 CITY STATE ZIP_CODE COUNTRY';
+      LOCALE_SETTINGS['number_format.exponent'] = 'eE';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.YEAR_CHARACTER.03255'] = '';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN.2'] = '{1}';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_MONTH.03255'] = 'ddd';
+      LOCALE_SETTINGS['BBI18N.SOLARIS_CHARSET'] = 'ISO8859-1';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN.1'] = '{0}';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.internal_date_format'] = 'dd/MM/yy';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_MONTH.03259'] = 'MMMM yyyy';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.TIME_ORDER.00519'] = 'HMP';
+      LOCALE_SETTINGS['float.format'] = '^([0-9]{1,3}(\\,[0-9]{3})*(\\.[0-9]+)?|\\.[0-9]+)?$';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.SORT_COLUMN'] = 'familyName';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.SHORT'] = '{1} {3}';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_SHORT.02097'] = 'MON TUE WED THU FRI SAT SUN';
+      LOCALE_SETTINGS['float.allow.negative.format'] = '^((([-]?[0-9]{1,3}(\\,[0-9]{3})*)|[-]?[0-9]*)(\\.[0-9]+)?|\\.[0-9]+)?$';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TYPE'] = 'GREGORIAN';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.GIVEN_INITIAL_FAMILY_NAME'] = '{4} {3}';
+      LOCALE_SETTINGS['efloat.format'] = '^[+-]?[0-9]*(\\.[0-9]+)?([eE][+-]?[0-9]+)?$';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_WEEK.03260'] = 'd MMM[ yyyy]{\'&#8212;\'d MMM, yyyy}';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_FULL.02100'] = 'January February March April May June July August September October November December';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.NUMBERS_HIJRI_LOCALIZED.00521'] = 'NO';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.LONG'] = '{0} {1} {2} {3}';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_FULL_HIJRI.02100'] = 'Muḥarram,Ṣafar,Rabīʿ\'al-Awwal,Rabīʿ\'ath-Thānī,Jumādā\'al-Ūlā,Jumādā\'ath-Thāniya,Rajab,Shaʿbān,Ramaḍān,Shawwāl,Dhū\'al-Qaʿda,Dhū\'al-Ḥijja';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.REPORT_FONT_NAME.03169'] = 'ARIAL.TTF';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.WORK_FIELD_ORDER'] = 'JOB_TITLE DEPARTMENT COMPANY B_PHONE_1 B_PHONE_2 B_FAX';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.GREETING'] = 'Welcome, {1}';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_SHORT.00520'] = 'Jan Feb  Mar Apr  May Jun Jul Aug Sep Oct Nov Dec';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.REPORT_FONT_SIZE.03168'] = '8';
+      LOCALE_SETTINGS['number_format.thousands_sep'] = ',';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_WEEK.03256'] = 'ddd d/M';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.SHORT_SURNAME'] = '{3}, {1}';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.AM_PM.00522'] = 'AM PM';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.DATE_ORDER.00519'] = 'DMY';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.PHONE_FIELD_ORDER'] = 'H_PHONE_1 H_PHONE_2 H_FAX M_PHONE';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_MIN.02099'] = 'MON TUE WED THU FRI SAT SUN';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.24HR_SUPPORT.03208'] = '1';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.REPORT_FONT_PATH.03170'] = 'C:/WINNT/Fonts';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.FIRST_DAY_OF_WEEK.03207'] = '1';
+      LOCALE_SETTINGS['BBI18N.WINDOWS_CHARSET'] = 'ISO-8859-1';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_SHORT_HIJRI.00520'] = 'Muḥarram,Ṣafar,Rabīʿ\'I,Rabīʿ\'II,Jumādā\'I,Jumādā\'II,Rajab,Shaʿbān,Ramaḍān,Shawwāl,Dhū\'al-Qaʿda,Dhū\'al-Ḥijja';
+      LOCALE_SETTINGS['BBI18N.LINUX_CHARSET'] = 'iso88591';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_CHARACTER.03253'] = '';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_CHARACTER.03254'] = '';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN_ORDER'] = 'title,givenName,middleName,familyName,suffix,otherName';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_DAY.03258'] = 'dddd, d MMM, yyyy';
+      LOCALE_SETTINGS['number_format.decimal_point'] = '.';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.DAYS.00521'] = '01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_FULL.02098'] = 'Monday Tuesday Wednesday Thursday Friday Saturday Sunday';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.date_display_pattern'] = 'DD/MM/YY';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.EXTENDED_SURNAME'] = '{3}';
+      LOCALE_SETTINGS['thousand.sep.format'] = ',';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.NUMBERS_HIJRI.00521'] = '0 1 2 3 4 5 6 7 8 9';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.ADDRESS_ORDER.07832'] = 'street,city,region,postal_code,country';
+      LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_DAY.03257'] = 'dddd d/M';
+
+      LOCALE_SETTINGS.getString = i18n_get_string;
+      LOCALE_SETTINGS.getFormattedString = i18n_get_formatted_string;
+
+    }
+
+    _init_bundle_LOCALE_SETTINGS();
+
+  </script>
+
+  <script type="text/javascript" src="/javascript/cdn.js"></script>
+  <script type="text/javascript" src="/groupjs/204917006A7FF36E4AA10FD25AE9D357.js?v=3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript"
+    src="/webapps/blackboard/dwr_open/interface/UserDataDWRFacade.js?v=3700.0.9-rel.14+4205da6_3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript"
+    src="/webapps/blackboard/dwr_open/interface/MashupDWRFacade.js?v=3700.0.9-rel.14+4205da6_3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript" src="/javascript/mathImg.js?v=3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript"
+    src="/webapps/blackboard//js/course-settings.js?v=3700.0.9-rel.14+4205da6_3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript" src="/javascript/titlebartagutils.js?v=3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript" src="/javascript/ngui/inventoryList.js?v=3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript"
+    src="/webapps/blackboard/dwr_open/interface/CourseMenuDWRFacade.js?v=3700.0.9-rel.14+4205da6_3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript"
+    src="/webapps/blackboard/dwr_open/interface/UserPageInstructionsSettingDWRFacade.js?v=3700.0.9-rel.14+4205da6_3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript" src="/javascript/dwr/engine.js?v=3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript" src="/javascript/ngui/breadcrumbs.js?v=3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript" src="/javascript/ngui/tree.js?v=3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript" src="/javascript/ngui/coursemenu.js?v=3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript" src="/javascript/dwr/util.js?v=3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript" src="/groupjs/E3F7E3968A0EB621CF321477F73B1CA0.js?v=3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript"
+    src="/webapps/blackboard/dwr_open/interface/UserDWRFacade.js?v=3700.0.9-rel.14+4205da6_3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript"
+    src="/webapps/bb-social-learning-BBLEARN/js/mybb.js?v=3700.0.9-rel.14+4205da6_3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript"
+    src="/webapps/portal/overlay/welcomeOverlay.js?v=3700.0.9-rel.14+4205da6_3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript"
+    src="/webapps/blackboard/dwr_open/interface/ToolActivityService.js?v=3700.0.9-rel.14+4205da6_3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript"
+    src="/webapps/bb-gate-BBLEARN/js/tool_service.js?v=3700.0.9-rel.14+4205da6_3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript"
+    src="/webapps/privacy-disclosure/js/cookieConsent.js?v=3700.0.9-rel.14+4205da6_3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript" src="/groupjs/A199E003B10DD94AB8D2DC6610DEB94B.js?v=3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript"
+    src="/webapps/bb-social-learning-BBLEARN/js/social.js?v=3700.0.9-rel.14+4205da6_3700.0.9-rel.14+4205da6"></script>
+  <script type="text/javascript"
+    src="/webapps/blackboard/dwr_open/interface/ProfileProviderService.js?v=3700.0.9-rel.14+4205da6_3700.0.9-rel.14+4205da6"></script>
+</head>
+
+<body id="learn-oe-body">
+
+  <h1 class="hideoff hideFromQuickLinks">Open Quick Links</h1>
+  <div id=quick_links_wrap><a id=quick_links_lightbox_link href="#"
+      onclick="quickLinks.lightboxHelper.toggleLightbox(); return false;" role=button aria-haspopup=true tabindex=1
+      title="Open&#x20;Quick&#x20;Links">Quick Links</a></div>
+  <div id=quickLinksLightboxDiv class=hideoff aria-hidden=true style="display:none">
+    <div class=ax-content>
+      <div class=content-lite>
+        <div id=quick_links_landmarks_section>
+          <h2 class=hideFromQuickLinks>Page Landmarks</h2>
+          <ul class=shortcut-list id=quick_links_landmark_list></ul>
+        </div>
+        <div id=quick_links_headings_section>
+          <h2 class=hideFromQuickLinks>Content Outline</h2>
+          <ul class=shortcut-list id=quick_links_heading_list></ul>
+        </div>
+      </div>
+      <div id=quick_links_hotkeys_section class=legend>
+        <h2 class=hideFromQuickLinks>Keyboard Shortcuts</h2>
+        <ul class=keycombos id=quick_links_hotkey_list></ul>
+      </div>
+    </div>
+  </div>
+  <h1 class="hideoff hideFromQuickLinks"></h1>
+  <div class=global-nav-bar-wrap>
+    <div class=global-nav-bar-wrap-mobile-nav><button class="hamburger hamburger--squeeze" type=button><span
+          class=hamburger-box><span class=hamburger-inner></span></span></button></div>
+    <div class="global-nav-bar logout"><a id="topframe.logout.label" href="/webapps/login/?action=logout" target=_top
+        class="nav-link logout-link" title=Logout> Logout</a></div>
+    <div id=global-nav class=global-nav-bar role=navigation data-preview=false>
+      <div class=hideoff>Global Menu</div><a id=global-nav-link class="nav-link u_floatThis-right"
+        href="#global-nav-flyout" aria-haspopup=true tabindex=1 accesskey=m role=navigation
+        title="Open&#x20;Global&#x20;Navigation&#x20;menu"><img src="/avatar/user/_261331_1?ts=1600154426000" alt=""
+          id=global-avatar dataToolTitle="User Avatar Image" class=global-top-avatar /> Jonatan Daugbjerg Bjerrekær<span
+          id=badgeTotal style="visibility: hidden" title=""><span class=hideoff id=badgeAXLabel>Activity
+            Updates</span><span class=badge id=badgeTotalCount title=""></span></span><img
+          src="/images/ci/mybb/arrowDown-topnav.png" alt="Expand Global Nav" id=global-toggle-img
+          class=global-toggle /></a>
+      <div id=global-nav-flyout class=flyout-menu style="display: none;" role=application>
+        <ul id=bottomButtons class=bottom-buttons>
+          <li class=bottom-buttons-home><a id="topframe.home.label" href="http://blackboard.au.dk/" target=_blank
+              class=home title=Home role=menuitem> Home</a></li>
+          <li class=bottom-buttons-help><a id="topframe.help.label" href="#"
+              onClick="globalNavigation.openHelpWindow('http://bbsupport.au.dk');" class=help title=Help role=menuitem>
+              Help</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- global_nav.jsp -->
+
+  <div id="globalNavPageNavArea">
+    <table class="bouncer" summary="Top frame table" role="presentation">
+      <tr>
+        <td>
+          <div class="topTabs bgBanner" id="topTabs">
+
+            <div class="brandingImgWrap">
+              <a href="https://blackboard.au.dk" target="_blank" title="Back to start page">
+                <img src="/branding/_1_1/blackboard.au.dk.png" alt="Back to start page" title="Back to start page"
+                  class="bannerImage" />
+              </a>
+            </div>
+
+            <div class="tabWrapper-right">
+              <H2 CLASS="hideoff">Top Frame Tabs</H2>
+              <table class="appTabs transparent" id="appTabList" summary="Tab List table" role="presentation">
+                <tr>
+                  <td id="MyInstitution.label">
+                    <a href="/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_1_1" TARGET="_top"><span>My
+                        Institution</span>
+                      <span class="hideoff"> Tab 1 of 5</span>
+                    </a>
+                  </td>
+                  <td id="Courses.label" class="active">
+                    <a href="/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_2_1"
+                      TARGET="_top"><span>Courses</span>
+                      <span class="hideoff"> Tab 2 of 5&nbsp;(active tab)</span>
+                    </a>
+                  </td>
+                  <td id="Community.label">
+                    <a href="/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_3_1"
+                      TARGET="_top"><span>Community</span>
+                      <span class="hideoff"> Tab 3 of 5</span>
+                    </a>
+                  </td>
+                  <td id="bbcms.label">
+                    <a href="/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_9_1" TARGET="_top"><span>Content
+                        Collection</span>
+                      <span class="hideoff"> Tab 4 of 5</span>
+                    </a>
+                  </td>
+                  <td id="AU Library">
+                    <a href="/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_138_1" TARGET="_top"><span>AU
+                        Library</span>
+                      <span class="hideoff"> Tab 5 of 5</span>
+                    </a>
+                  </td>
+                </tr>
+              </table>
+              <div class="clearfloats"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="globalNavPageContentArea">
+
+    <h2 class="hideoff">
+      Current Location
+    </h2>
+
+    <div id="breadcrumbs" class="breadcrumbs clearfix ">
+      <div class="breadcrumb-controls clearfix" id="breadcrumb_controls_id">
+
+
+
+
+
+        <div id="helpTextToggle" class="helpLink hidden">
+          <a href="#" id="helpTextToggleLink" class="browseIcon">
+            <img id="helpTextToggleImg" src="/images/ci/ng/small_help_on2.gif" alt="Turn help text off and on" /></a>
+        </div>
+        <input type='hidden' name='showHelperSetting' id='showHelperSetting' value=''>
+      </div>
+
+      <div class="path  noToggle" role="navigation">
+        <ol class="clearfix">
+          <li class="root coursePath"> <a href="/webapps/blackboard/execute/courseMain?course_id=_136331_1"
+              title="E20 - Algorithms and Data Structures [520191U004]"> <span id="crumb_1">
+                E20 - Algorithms and Data Structures [520191U004]
+              </span>
+            </a>
+            <div id="arrowContext_1" class="courseArrow" onClick="page.ContextMenu.changeArrowInBreadcrumb(1, event );">
+              <span class="contextMenuContainer" style=" display: inline;"
+                bb:menuGeneratorURL="/webapps/blackboard/execute/getCrossCourseMenuHTML?course_id=_136331_1"
+                bb:navItem="" bb:contextParameters="" bb:menuOrder="" bb:overwriteNavItems="" bb:beforeShowFunc="">
+
+                <a id="cmlink_023b0c9ae89646078bedf1386a78d9cf"
+                  onfocus="page.ContextMenu.LI(event, 'cmdiv_023b0c9ae89646078bedf1386a78d9cf',false);"
+                  onmouseover="page.ContextMenu.LI(event, 'cmdiv_023b0c9ae89646078bedf1386a78d9cf',false);"
+                  class="cmimg editmode jsInit  " href="#contextMenu" title="Course-to-Course Navigation"> <img
+                    src="/images/ci/icons/cmlink_generic.gif" alt="Course-to-Course Navigation"></a>
+                <div id="cmdiv_023b0c9ae89646078bedf1386a78d9cf" class="cmdiv" style="display: none;">
+                  <ul id="cmul0_023b0c9ae89646078bedf1386a78d9cf">
+                    <li class="contextmenubar_top">
+                      <a href="#close" class="close-menu">
+                        <span class="close-contextmenu" data-icon="X" role="presentation" aria-hidden="true"></span>
+                        <img alt="Close Menu" src="/images/ci/ng/close_mini.gif"></a>
+                    </li>
+                  </ul>
+                </div>
+              </span>
+            </div>
+          </li>
+          <li class="placeholder"> <span id="crumb_2">
+              Course plan
+            </span>
+          </li>
+        </ol>
+      </div>
+
+    </div>
+
+    <div class="locationPane">
+      <nav role="navigation" aria-label="Course Menu" id="navigationPane" class="navigationPane ">
+
+        <div id="menuWrap" class="menuWrap">
+          <div id="puller">
+            <a id="menuPuller" class="clickpuller" title="Hide Course Menu" href="#">
+              <img id="expander" alt="Hide Course Menu" src="/images/spacer.gif" />
+            </a>
+          </div>
+          <div class="menuWrap-inner">
+            <div id="courseMenuPalette" class="navPalette listCm navPaletteExpCol">
+              <div class="actionBarMicro clearfix">
+                <h2 class="hideoff">Menu Management Options</h2>
+                <ul class="nav clearfix u_floatThis-right">
+                  <li id="refreshMenuLink" class="secondaryButton "><a href="#" title="Refresh"><span><img
+                          src="/images/ci/ng/small_refresh.gif" alt="Refresh"></span></a></li>
+                  <li id="courseMapButton" class="secondaryButton "><a href="#"
+                      title="Display Course Menu in a Window"><span><img src="/images/ci/ng/small_new_window.gif"
+                          alt="Display Course Menu in a Window"></span></a></li>
+                </ul>
+              </div>
+              <div class="navPaletteContent">
+                <h2 class="hideoff" tabindex="-1">Course Menu:</h2>
+                <div id="courseMenuPalette_paletteTitleHeading">
+                  <div class="navPaletteTitle">
+                    <h3 aria-expanded="true"><a href="#" class="comboLink"
+                        title="Collapse E20 - Algorithms and Data Structures [520191U004]" id="courseMenu_link">E20 -
+                        Algorithms and Data Structures [520191U004]</a></h3>
+                    <h3><a href="/webapps/blackboard/execute/courseMain?course_id=_136331_1" target=""
+                        class="submenuLink" id="courseMenu_combo" title="Go to Course Entry Page"><img
+                          src="/images/ci/icons/generic_dbl_arrow_right.gif" alt="Course Entry Page"></a></h3>
+                  </div>
+                </div>
+                <ul id="courseMenuPalette_contents" class="courseMenu">
+                  <li id="paletteItem:_2255537_1" class="clearfix "><a
+                      href="/webapps/blackboard/content/listContent.jsp?course_id=_136331_1&content_id=_2627405_1&mode=reset"
+                      target="_self"><span title="Algorithms and Data Structures (Fall 2020)">Algorithms and Data
+                        Structures (Fall 2020)</span></a></li>
+                  <li id="paletteItem:_2383701_1" class="clearfix "><a
+                      href="/webapps/blackboard/content/listContent.jsp?course_id=_136331_1&content_id=_2766858_1&mode=reset"
+                      target="_self"><span title="⚠️Auditorium seating">⚠️Auditorium seating</span></a></li>
+                  <li id="paletteItem:_2376827_1" class="clearfix "><a
+                      href="/webapps/blackboard/content/listContent.jsp?course_id=_136331_1&content_id=_2727645_1&mode=reset"
+                      target="_self"><span title="Course plan">Course plan</span></a></li>
+                  <li id="paletteItem:_2385899_1" class="clearfix "><a
+                      href="/webapps/blackboard/content/listContent.jsp?course_id=_136331_1&content_id=_2779068_1&mode=reset"
+                      target="_self"><span title="Lecture videos">Lecture videos</span></a></li>
+                  <li id="paletteItem:_2255546_1" class="clearfix "><a
+                      href="/webapps/blackboard/content/launchLink.jsp?course_id=_136331_1&tool_id=_136_1&tool_type=TOOL&mode=view&mode=reset"
+                      target="_self"><span title="Announcements">Announcements</span></a></li>
+                  <li id="paletteItem:_2255547_1" class="clearfix "><a
+                      href="/webapps/blackboard/content/launchLink.jsp?course_id=_136331_1&tool_id=_144_1&tool_type=TOOL&mode=view&mode=reset"
+                      target="_self"><span title="Discussion Board">Discussion Board</span></a></li>
+                  <li id="paletteItem:_2376920_1" class="clearfix "><a
+                      href="/webapps/blackboard/content/listContent.jsp?course_id=_136331_1&content_id=_2728397_1&mode=reset"
+                      target="_self"><span title="Material">Material</span></a></li>
+                  <li id="paletteItem:_2376919_1" class="clearfix "><a
+                      href="/webapps/blackboard/content/listContent.jsp?course_id=_136331_1&content_id=_2728395_1&mode=reset"
+                      target="_self"><span title="Programming exercises">Programming exercises</span></a></li>
+                  <li id="paletteItem:_2376922_1" class="clearfix "><a
+                      href="/webapps/blackboard/content/listContent.jsp?course_id=_136331_1&content_id=_2728400_1&mode=reset"
+                      target="_self"><span title="Handins">Handins</span></a></li>
+                  <li id="paletteItem:_2376866_1" class="clearfix "><a
+                      href="/webapps/blackboard/content/listContent.jsp?course_id=_136331_1&content_id=_2728026_1&mode=reset"
+                      target="_self"><span title="Groups &amp;amp; participants">Groups &amp; participants</span></a>
+                  </li>
+                  <li id="paletteItem:_2376830_1" class="clearfix "><a
+                      href="/webapps/blackboard/content/listContent.jsp?course_id=_136331_1&content_id=_2727671_1&mode=reset"
+                      target="_self"><span title="Exam">Exam</span></a></li>
+                  <li id="paletteItem:_2255545_1" class="clearfix "><a
+                      href="https://kursuskatalog.au.dk/en/course/100918/" target="_blank"><span
+                        title="AU course description">AU course description</span></a></li>
+                  <li id="paletteItem:_2255548_1" class="clearfix "><a
+                      href="/webapps/blackboard/content/launchLink.jsp?course_id=_136331_1&toc_id=_2255548_1&mode=view&mode=reset"
+                      target="_self"><span title="AU course evaluation">AU course evaluation</span></a></li>
+                  <li id="paletteItem:_2376825_1" class="clearfix "><a
+                      href="/webapps/blackboard/content/listContent.jsp?course_id=_136331_1&content_id=_2727630_1&mode=reset"
+                      target="_self"><span title="The nerdy corner">The nerdy corner</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div id="myGroups" class="navPalette tools navPaletteExpCol">
+              <div class="navPaletteContent">
+                <div id="myGroups_paletteTitleHeading">
+                  <div class="navPaletteTitle">
+                    <h3 aria-expanded="true"><a href="#" id="myGroups_link" title="Collapse My Groups"> My Groups </a>
+                    </h3>
+                  </div>
+                </div>
+                <ul id="myGroups_contents" class="">
+                  <li id="mygroups._154281_1">
+                    <h4 aria-expanded="false"><a class="comboLink" href="#" id="mygroups._154281_1_groupExpanderLink"
+                        title="Expand Gruppe IT - 20">Gruppe IT - 20</a></h4><a class="submenuLink"
+                      href="/webapps/blackboard/execute/modulepage/viewGroup?course_id=_136331_1&group_id=_154281_1"
+                      title="Go to Group Homepage: Gruppe IT - 20"><img alt="Group Homepage: Gruppe IT - 20"
+                        src="/images/ci/icons/generic_dbl_arrow_right.gif"></a>
+                    <ul class="submenu" id="mygroups._154281_1_groupContents" style="display:none;">
+                      <li>&nbsp;</li>
+                    </ul>
+                  </li>
+                  <li id="mygroups._154140_1">
+                    <h4 aria-expanded="false"><a class="comboLink" href="#" id="mygroups._154140_1_groupExpanderLink"
+                        title="Expand Hold IT">Hold IT</a></h4><a class="submenuLink"
+                      href="/webapps/blackboard/execute/modulepage/viewGroup?course_id=_136331_1&group_id=_154140_1"
+                      title="Go to Group Homepage: Hold IT"><img alt="Group Homepage: Hold IT"
+                        src="/images/ci/icons/generic_dbl_arrow_right.gif"></a>
+                    <ul class="submenu" id="mygroups._154140_1_groupContents" style="display:none;">
+                      <li>&nbsp;</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div role="main" id="contentPanel" class="contentPane  ">
+        <div class="shadow">
+          <div id="editmodeWrapper">
+
+            <div id="content" class="contentBox ">
+
+              <div id="pageTitleDiv" class="pageTitle clearfix ">
+
+
+                <div id="pageTitleBar" class='pageTitleIcon' tabindex="0">
+                  <img src="/images/ci/sets/set12/folder_on.svg" alt="" id="titleicon">
+                  <h1 id="pageTitleHeader" tabindex="-1"><span id="pageTitleText">
+                      <span style="color:#000000;">Course plan</span> </span></h1>
+                  <span id="_titlebarExtraContent" class="titleButtons"></span>
+                </div>
+
+
+                <form name="contentForm" action="listContent.jsp?content_id=_2727645_1&course_id=_136331_1"
+                  method="POST">
+                  <div>
+                    <!-- inline elements cannot be listed directly in a form. (it's invalid html) -->
+                    <input type="hidden" name="rstatus" id="rstatus" value="" />
+
+
+
+                    <input type="hidden" name="reviewed_content_id" id="reviewed_content_id" value="" />
+
+
+
+                    <input type="hidden" name="action" id="action" value="" />
+
+
+
+                  </div>
+                </form>
+
+
+              </div>
+
+              <div class="container clearfix" id="containerdiv">
+                <h2 class="hideoff">Content</h2>
+                <script language='javascript'
+                  type='text/javascript'>var eesy_course_id = 136331; var_eesy_inactive_roles = [];</script>
+                <div id='eesy_realurl' style='display: none;'>
+                  https%3A%2F%2Fblackboard.au.dk%2Fwebapps%2Fblackboard%2Fcontent%2FlistContent.jsp%3Fcourse_id%3D_136331_1%26content_id%3D_2727645_1%26mode%3Dreset
+                </div>
+                <script
+                  type='text/javascript'>  (function () { function async_load() { var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '/webapps/ee-Eesypluginv2-BBLEARN/loader2.jsp'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); } if (window.attachEvent) window.attachEvent('onload', async_load); else window.addEventListener('load', async_load, false); })(); </script>
+                <script type="text/javascript" src="/webapps/achievements/js/achievement.js"></script>
+                <script src="/javascript/scriptaculous/version_pinned_scriptaculous.js"></script>
+                <link rel="stylesheet" href="/webapps/achievements/css/achievements.css" type="text/css"
+                  media="screen" />
+                <script type="text/javascript">
+                  new Ajax.Request('/webapps/achievements/checkAchievements.form', {
+                    method: 'get',
+                    asynchronous: true,
+                    parameters: { courseId: '_136331_1', type: 1 },
+                    onSuccess: function (response) {
+                      var jsonArray = response.responseJSON;
+                      handleAchievements(jsonArray);
+                    },
+                    onFailure: function () { alert('Something went wrong...'); }
+                  });
+                </script>
+
+                <!-- remember whether this list is paged -->
+                <input type="hidden" name="isPaged" value="false" />
+
+                <!-- begin edit paging (top) -->
+                <!-- end top paging edit -->
+
+
+
+                <!-- Begin top list actionbar /paging area -->
+
+                <ul id="content_listContainer" class="contentListPlain">
+
+
+
+                  <li id="contentListItem:_2727649_1" class="clearfix liItem read">
+
+
+                    <div class="item clearfix" ID="_2727649_1">
+
+                      <h3>
+                        <span class="reorder editmode hideme"><span><img src="/images/ci/icons/generic_updown.gif"
+                              alt="" /></span></span>
+
+
+
+                        <span style="color:#000000;">Algorithms and Data Structures (Fall 2020)</span>
+                      </h3>
+
+                    </div>
+
+
+
+                    <div class="details">
+                      <div class="vtbegenerated">
+                        <p>
+                          <link rel="stylesheet"
+                            href="https://blackboard.au.dk/bbcswebdav/pid-2727649-dt-content-rid-9140237_1/xid-9140237_1">
+                        </p>
+                        <script type="text/javascript">/**/
+                          var base = "https://blackboard.au.dk/bbcswebdav/courses/BB-Cou-UUVA-90729/";
+
+                          function content(url) { window.open(base + url, "_blank") }
+/**/</script>
+                        <!--
+<p style="color: #ff0000; padding: 10pt; text-align:center; font-size: 150%; border: 3px solid #ff0000"><strong>&#x26A0; WARNING</strong>: Course pages are under construction.... content partly from 2018</p>
+-->
+                        <p><b>Videos of lectures from previous years</b>: On the course pages for Algorithms and Data
+                          Structures in <a href="https://cs.au.dk/~gerth/fads18/" target="_blank"
+                            rel="noreferrer noopener">2018 </a>and <a href="https://cs.au.dk/~gerth/ads19/"
+                            target="_blank" rel="noreferrer noopener">2019</a> you find links to videos of the lectures
+                          in the <em>Course Plans</em>. The lectures were recorded with <a href="https://vc.au.dk/"
+                            target="_blank" rel="noreferrer noopener">LifeSize</a>. Due to the instability of LifeSize,
+                          some videos are missing, some videos have bad resolutions, sometimes the camera points in the
+                          wrong directions etc.</p>
+                        <p><b>Lecture videos</b>: See entry in course menu.</p>
+                        <p><b>Slides and exercises</b>: Will be added as the course progresses. Slides from last year
+                          can be found on the <a
+                            onclick="this.href='/webapps/blackboard/content/contentWrapper.jsp?content_id=_2727649_1&amp;displayName=Linked+File&amp;navItem=content&amp;attachment=true&amp;course_id=_136331_1&amp;tab_group=courses&amp;href=https%3A%2F%2Fcs.au.dk%2F%7Egerth%2Fads19%2F';"
+                            href="https://cs.au.dk/~gerth/ads19/">2019</a> course page.</p>
+                        <table style="border-collapse: collapse; line-height: 125%;">
+                          <thead>
+                            <tr>
+                              <th>Week</th>
+                              <th>Day</th>
+                              <th width="35%">Lecture</th>
+                              <th>Literature</th>
+                              <th>Slides</th>
+                              <th><strong>Exercises</strong></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr style="background-color: #f5f5f5;">
+                              <td rowspan="3">36</td>
+                              <td>Monday<br>31/8</td>
+                              <td><em>First TA sessions</em></td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>Basic math test<br> Blackboard registration of TA class and handin group (if
+                                known)<br> Subscribe to discussion board forums<br> [B] <a
+                                  href="javascript:content('supplement.pdf')">Problems 1.1-1.7</a></td>
+                            </tr>
+                            <tr style="background-color: #f5f5f5;">
+                              <td>Tuesday<br>1/9</td>
+                              <td>Introduction to Algorithms and Data Structures<br> <i> 10.15-11.00 IT+Hold
+                                  2+DV+DA4<br> 11.15-12.00 DA1+DA5+DA6+DA7<br> 12.15-13.00 DA2+DA3+DA8</i></td>
+                              <td>[B] Section 1.1</td>
+                              <td><a href="javascript:content('slides/intro.pdf')">intro.pdf</a></td>
+                              <td>&nbsp;</td>
+                            </tr>
+                            <tr style="background-color: #f5f5f5;">
+                              <td>Friday<br>4/9</td>
+                              <td>Sorting with swaps, selection sort</td>
+                              <td>[B] Section 1.2-1.3</td>
+                              <td><a href="javascript:content('slides/puzzle.pdf')">puzzle.pdf</a></td>
+                              <td>[B] Exercises 1.1, 1.2, 1.3, 1.4, 1.5, 1.6</td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">37</td>
+                              <td>Tuesday<br>8/9</td>
+                              <td>Binary and linear search, longest common subsequence, Erdös &amp; Szekeres Theorem,
+                                logarithms</td>
+                              <td>[B] Section 1.4-1.7</td>
+                              <td><a href="javascript:content('slides/binarysearch.pdf')">binarysearch.pdf</a></td>
+                              <td>[B] Exercises 1.7, 1.8, Problems 1.9, 1.10<br> <strong>Handin 1</strong>: [B] <a
+                                  href="javascript:content('supplement.pdf')">Problem 1.8</a> (searching infinte list)
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Friday<br>11/9</td>
+                              <td>Integer arithmetic: Binary and decimal numbers, addition, subtraction, multiplication,
+                                division</td>
+                              <td>[B] Section 1.8</td>
+                              <td><a href="javascript:content('slides/numbers.pdf')">numbers.pdf</a></td>
+                              <td>[B] Exercises 1.9, 1.10, 1.11, 1.12</td>
+                            </tr>
+                            <tr style="background-color: #f5f5f5;">
+                              <td rowspan="2">38</td>
+                              <td>Tuesday<br>15/9</td>
+                              <td>Induction, invariants</td>
+                              <td>[B] Section 1.9-1.10</td>
+                              <td><a href="javascript:content('slides/induction.pdf')">induction.pdf</a></td>
+                              <td>[B] Exercises 1.13, 1.14, 1.16, 1.16, 1.18<br> <strong>Handin 2</strong>: [B] Exercise
+                                1.19 (squared)</td>
+                            </tr>
+                            <tr style="background-color: #f5f5f5;">
+                              <td>Friday<br>18/9</td>
+                              <td><i>Meeting with TA class representatives in Nygaard 395, 11:15-12:00 (Tentative
+                                  reservation)</i><br> Analysis tools, RAM model, insertion sort, O-notation</td>
+                              <td>[CLRS] Ch. 1-3.1</td>
+                              <td><a href="javascript:content('slides/ram.pdf')">ram.pdf</a></td>
+                              <td>[CLRS] Exercises 1.2-2, 1.2-3, 3.1-1, 3.1-4, Problems 1-1, 3-3 (ignore functions
+                                involving lg*), 3-4(a-e)
+                                <!-- <strong>Quiz</strong>: <a href="http://quiz.cs.au.dk/selftest/12/" target="_blank">Asymptotisk notation: Funktioner og Summer</a> -->
+                              </td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">39</td>
+                              <td>Tuesday<br>22/9</td>
+                              <td>Mergesort, heapsort, priority queues<br> Introduction to programming exercises</td>
+                              <td>[CLRS] Ch. 2.3, 6</td>
+                              <td><a href="javascript:content('slides/heaps.pdf')">heaps.pdf</a><br> <a
+                                  href="javascript:content('slides/code.pdf')">code.pdf</a></td>
+                              <td>[CLRS] Exercises 6.1-4, 6.1-5, 6.1-6, 6.3-2, Problems 2-1, (2-4), 6-1<br>
+                                <strong>Handin 3:</strong> [CLRS] Problem 6-2 (d-ary heap)<br>
+                                <!-- <strong>Quiz</strong>: <a href="http://quiz.cs.au.dk/selftest/13/" target="_blank">Heaps</a></td> -->
+                                <strong>Programming Exercises I</strong><br>Due Monday 5/10, 23:59.</td>
+                            </tr>
+                            <tr>
+                              <td>Friday<br>25/9</td>
+                              <td>Quicksort, median, randomized selection</td>
+                              <td>[CLRS] Ch. 7, 9.1-9.2</td>
+                              <td><a href="javascript:content('slides/quicksort.pdf')">quicksort.pdf</a></td>
+                              <td>[CLRS] Exercises 7.1-2, 7.2-3, 7.3-2, Problem 9-1
+                                <!-- <strong>Quiz</strong>: <a href="http://quiz.cs.au.dk/selftest/14/" target="_blank">Merge Sort and Quicksort</a> -->
+                              </td>
+                            </tr>
+                            <tr style="background-color: #f5f5f5;">
+                              <td rowspan="2">40</td>
+                              <td>Tuesday<br>29/9</td>
+                              <td>Lower bound for comparison based sorting, counting sort, radix sort, bucket sort</td>
+                              <td>[CLRS] Ch. 8</td>
+                              <td><a href="javascript:content('slides/sorting.pdf')">sorting.pdf</a></td>
+                              <td>[CLRS] Exercises 8.1-1, 8.1-3, 8.2-4, 8.3-4</td>
+                            </tr>
+                            <tr style="background-color: #f5f5f5;">
+                              <td>Friday<br>2/10</td>
+                              <td>Stacks and queues</td>
+                              <td>[CLRS] Ch. 10.1-10.2, 10.4</td>
+                              <td><a href="javascript:content('slides/stacks.pdf')">stacks.pdf</a></td>
+                              <td>[CLRS] Exercises 10.1-2, 10.1-5, 10.2-7, Problems 10-1</td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">41</td>
+                              <td>Tuesday<br>6/10</td>
+                              <td>Hashing</td>
+                              <td>[CLRS] Ch. 11.1-11.4</td>
+                              <td><a href="javascript:content('slides/hashing.pdf')">hashing.pdf</a></td>
+                              <td>[CLRS] Exercises 11.2-2, 11.2-5, 11.4-1<br> <strong>Handin 4:</strong> [CLRS] Problem
+                                6-3 (Young tableaus)</td>
+                            </tr>
+                            <tr>
+                              <td>Friday<br>9/10</td>
+                              <td>Search trees<br> (an unbalanced search tree implementation: <a
+                                  href="javascript:content('code/Node.java')">Node.java</a>, <a
+                                  href="javascript:content('code/SearchTree.java')">SearchTree.java</a>)</td>
+                              <td>[CLRS] Ch. 12.1-12.3</td>
+                              <td><a href="javascript:content('slides/searchtrees.pdf')">searchtrees.pdf</a></td>
+                              <td>[CLRS] Exercises 12.1-5, 12.2-4
+                                <!-- <strong>Quiz</strong>: <a href="https://quiz.cs.au.dk/selftest/15" target="_blank">Search trees</a> -->
+                              </td>
+                            </tr>
+                            <tr style="background-color: #f5f5f5;">
+                              <td>42</td>
+                              <td colspan="5" style="line-height: 200%;"><em>Fall break</em></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">43</td>
+                              <td>Tuesday<br>20/10</td>
+                              <td>Balanced search trees: Red-black trees<br> (a red-black tree implementation: <a
+                                  href="javascript:content('code/RedBlackNode.java')">RedBlackNode.java</a>, <a
+                                  href="javascript:content('code/RedBlackTree.java')">RedBlackTree.java</a>)</td>
+                              <td>[CLRS] Ch. 13</td>
+                              <td><a href="javascript:content('slides/redblack.pdf')">redblack.pdf</a></td>
+                              <td>[CLRS] Exercises 13.1-5, 13.1-6, 13.2-2, 13.3-2, Problem (13-2)<br> <strong>Handin
+                                  5</strong>: [CLRS] Problems 12-2 (radix trees)</td>
+                            </tr>
+                            <tr>
+                              <td>Friday<br>23/10</td>
+                              <td>Augmented search trees: Dynamic rank, interval trees, Fenwick trees</td>
+                              <td>[CLRS] Ch. 14</td>
+                              <td><a href="javascript:content('slides/augmented.pdf')">augmented.pdf</a></td>
+                              <td>[CLRS] Exercises 14.1-5, 14.1-7, 14.3-4, 14.3-6, Problem 14-1<br> <strong>Programming
+                                  Exercises II</strong><br>Due Monday 2/11 23:59.</td>
+                            </tr>
+                            <tr style="background-color: #f5f5f5;">
+                              <td rowspan="2">44</td>
+                              <td>Tuesday<br>27/10</td>
+                              <td>Disjoint set union-find</td>
+                              <td>[CLRS] Ch. 21.1-21.3</td>
+                              <td><a href="javascript:content('slides/unionfind.pdf')">unionfind.pdf</a></td>
+                              <td>[CLRS] Exercises 21.3-3, 21.3-4, 21.3-5</td>
+                            </tr>
+                            <tr style="background-color: #f5f5f5;">
+                              <td>Friday<br>30/10</td>
+                              <td>Amortized analysis<br> <em>Example of using amortization in data structure
+                                  design</em>: Self-Adjusting Heaps (DOI: <a class="doi"
+                                  href="https://doi.org/10.1137/0215004" target="_blank">10.1137/0215004</a>)</td>
+                              <td>[CLRS] Ch. 17</td>
+                              <td><a href="javascript:content('slides/amortized.pdf')">amortized.pdf</a></td>
+                              <td>[CLRS] Exercises 17.2-3, 17.3-3
+                                <!-- <strong>Quiz</strong>: <a href="https://quiz.cs.au.dk/selftest/amortized/" target="_blank">Amortized analysis</a> -->
+                              </td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">45</td>
+                              <td>Tuesday<br>3/11</td>
+                              <td>Divide-and-conquer</td>
+                              <td>[CLRS] Ch. 2.3, 4.2-4.5, Problem 30-1.c</td>
+                              <td><a href="javascript:content('slides/divide.pdf')">divide.pdf</a></td>
+                              <td>[CLRS] Exercises 4.3-1, 4.3-2, Problem 4-1<br>
+                                <!-- <a href="javascript:content('opgaver.pdf')">exercise 3</a> (nuts and bolts)<br /> -->
+                                <strong>Handin 6</strong>:
+                                <!--<a href="javascript:content('opgaver.pdf')">exercise 4</a>--> (skyline)
+                                <!-- <strong>Quiz</strong>: <a href="https://quiz.cs.au.dk/selftest/recurrences/" target="_blank">Recurrences</a> -->
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Friday<br>6/11</td>
+                              <td>Deterministic selection<br> (an inplace implementation: <a
+                                  href="javascript:content('code/DeterministicSelection.java')">DeterministicSelection.java</a>)
+                              </td>
+                              <td>[CLRS] Ch. 9.3</td>
+                              <td><a href="javascript:content('slides/selection.pdf')">selection.pdf</a></td>
+                              <td>[CLRS] Exercises 9.3-1, 17.3-7</td>
+                            </tr>
+                            <tr style="background-color: #f5f5f5;">
+                              <td rowspan="2">46</td>
+                              <td>Tuesday<br>10/11</td>
+                              <td>Dynamic programming<br> (<a
+                                  href="javascript:content('code/CutRod.java')">CutCord.java</a>)</td>
+                              <td>[CLRS] Ch. 15.1, 15.3, 15.4, Problem 15-4</td>
+                              <td><a href="javascript:content('slides/dp.pdf')">dp.pdf</a></td>
+                              <td>[CLRS] Exercises 15.1-2, 15.1-3, 15.4-1, 15.4-2, 15.4-4, (15.4-5)<br> <strong>Handin
+                                  7</strong>:
+                                <!--<a href="javascript:content('opgaver.pdf')">exercise 5</a>--> (merging words)</td>
+                            </tr>
+                            <tr style="background-color: #f5f5f5;">
+                              <td>Friday<br>13/11</td>
+                              <td>Dynamic programming (continued)<br> <em>Not curriculum</em>: Hirsberger's linear space
+                                LCS algorithm, CACM 1975 (DOI: <a href="https://doi.org/10.1145/360825.360861"
+                                  target="_blank" class="small-link-text">10.1145/360825.360861</a>)</td>
+                              <td>[CLRS] Ch. 15.2, 15.5</td>
+                              <td><a href="javascript:content('slides/dp.pdf')">dp.pdf</a></td>
+                              <td>[CLRS] Exercises 15.5-2, 15.5-3, Problems 15-2, (15-3)<br> <strong>Programming
+                                  Exercises III</strong><br>Due Monday 23/11 23:59.</td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">47</td>
+                              <td>Tuesday<br>17/11</td>
+                              <td>Greedy algorithms</td>
+                              <td>[CLRS] Ch. 16.1-16.3</td>
+                              <td><a href="javascript:content('slides/greedy.pdf')">greedy.pdf</a></td>
+                              <td>[CLRS] Exercises 16.1-4, 16.2-5, 16.3-6</td>
+                            </tr>
+                            <tr>
+                              <td>Friday<br>20/11</td>
+                              <td>Graph algorithms: Graph representation, breadth first search (BFS)</td>
+                              <td>[CLRS] Ch. 22.1-22.2</td>
+                              <td><a href="javascript:content('slides/graphs.pdf')">graphs.pdf</a></td>
+                              <td>[CLRS] Exercises 22.1-1, 22.1-5, 22.1-6, 22.2-1, 22.2-6</td>
+                            </tr>
+                            <tr style="background-color: #f5f5f5;">
+                              <td rowspan="2">48</td>
+                              <td>Tuesday<br>24/11</td>
+                              <td>Graph algorithms: Depth first search (DFS), topological sorting, strongly connected
+                                components</td>
+                              <td>[CLRS] Ch. 22.3-22.5</td>
+                              <td><a href="javascript:content('slides/dfs.pdf')">dfs.pdf</a></td>
+                              <td>[CLRS] Exercises 22.3-1, 22.3-2, 22.4-2, 22.5-7<br> <strong>Handin 8</strong>: [CLRS]
+                                Problem 22-4 (reachability)</td>
+                            </tr>
+                            <tr style="background-color: #f5f5f5;">
+                              <td>Friday<br>27/11</td>
+                              <td>Graph algorithms: Minimum spanning trees (MST)</td>
+                              <td>[CLRS] Ch. 23</td>
+                              <td><a href="javascript:content('slides/mst.pdf')">mst.pdf</a></td>
+                              <td>[CLRS] Exercises 23.1-3, 23.1-11, 23.2-2, 23.2-4</td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">49</td>
+                              <td>Tuesday<br>1/12</td>
+                              <td>Graph algorithms: Single source shortest path problem (SSSP)</td>
+                              <td>[CLRS] Ch. 24.1-24.3</td>
+                              <td><a href="javascript:content('slides/sssp.pdf')">sssp.pdf</a></td>
+                              <td>[CLRS] Exercises 24.1-1, 24.1-3, 24.2-4, 24.3-2, 24.3-4, Problems 24-3<br>
+                                <strong>Handin 9</strong>:
+                                <!-- <a href="javascript:content('opgaver.pdf')">exercise 6(a-c)</a> --> (grid graphs)
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Friday<br>4/12</td>
+                              <td>Graph algorithms: All pairs shortest path problem (APSP)</td>
+                              <td>[CLRS] Ch. 25</td>
+                              <td><a href="javascript:content('slides/apsp.pdf')">apsp.pdf</a></td>
+                              <td>[CLRS] Excersies 25.1-9, 25.1-10, 25.2-4, 25.2-6 Problem 25-1<br> <strong>Programming
+                                  Exercises IV</strong><br>Due Monday 14/12 23:59.</td>
+                            </tr>
+                            <tr style="background-color: #f5f5f5;">
+                              <td rowspan="2">50</td>
+                              <td>Tuesday<br>8/12</td>
+                              <td>Graph algorithms: Independent set, vertex cover</td>
+                              <td>[CLRS] Ch. 35.1</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                            </tr>
+                            <tr style="background-color: #f5f5f5;">
+                              <td>Friday<br>11/12</td>
+                              <td>Course evaluation follow up, discussion of exam</td>
+                              <td>&nbsp;</td>
+                              <td><a href="javascript:content('slides/eksamen.pdf')">eksamen.pdf</a></td>
+                              <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">January</td>
+                              <td>&nbsp;</td>
+                              <td>Questions &amp; answers sessions</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td>&nbsp;</td>
+                              <td>Exam</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <div id="_2727649_1previewModule" class="moduleSample">
+                    </div>
+                  </li>
+
+                </ul>
+
+
+
+
+                <!-- Begin bottom list action bar. -->
+                <!-- End bottom list action bar. -->
+
+
+                <!-- begin edit paging (bottom) -->
+                <!-- end edit paging (bottom) -->
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type='text/javascript'>var resizeIframeListener = window.addEventListener('message', function (e) {
+      try {
+        var postMessageData = e.data;
+        if (postMessageData.messageType === "kms-transcript" && postMessageData.entryId !== undefined) {
+          var items = Array.from(document.querySelectorAll(".liItem"));
+          if (items.length === 0) {
+            items = Array.from(document.querySelectorAll("#announcementList li"));
+          } items.forEach(function (item) {
+            var iframe = item.getElementsByTagName("iframe")[0];
+            if (iframe !== undefined && iframe.getAttribute("src").indexOf(postMessageData.entryId) >= 0) {
+              iframe.style.height = "800px";
+              iframe.parentElement.style.height = "800px";
+            }
+          });
+        }
+      }
+      catch (ex) {
+        console.error("encountered error in kms communication", ex);
+      }
+    });</script>
+  <script type='text/javascript'> if (!Array.prototype.includes) {
+      Object.defineProperty(Array.prototype, 'includes', {
+        value: function (searchElement, fromIndex) {
+          var o = Object(this);
+          var len = o.length >>> 0;
+          if (len === 0) {
+            return false;
+          }
+          var n = fromIndex | 0;
+          var k = Math.max(n >= 0 ? n : len - Math.abs(n), 0);
+
+          function sameValueZero(x, y) {
+            return x === y || (typeof x === 'number' && typeof y === 'number' && isNaN(x) && isNaN(y));
+          }
+
+          while (k < len) {
+            if (sameValueZero(o[k], searchElement)) {
+              return true;
+            }
+            k++;
+          }
+
+          return false;
+        }
+      });
+    }
+
+    /** this function IS used. see com/kaltura/bb/util/JspTopFrameStartHookHandler.java:48 **/
+    var replaceKalturaIframeTokens = function (contentIdsToReplace, courseId) {
+      var contentItems = Array.prototype.slice.call(document.querySelectorAll('[id^="contentListItem"]'));
+      contentItems = contentItems.filter(function (contentItem) {
+        var contentId = contentItem.id.split(':')[1];
+        return contentIdsToReplace.includes(contentId);
+      });
+
+      contentItems.forEach(function (contentItem) {
+        var contentId = contentItem.id.split(':')[1];
+        var innerIframes = Array.prototype.slice.call(contentItem.querySelectorAll('iframe'));
+        var kalturaIframe = innerIframes.filter(function (iframeElement) {
+          return iframeElement.src.indexOf('osv-kaltura') !== -1;
+        });
+
+        if (kalturaIframe.length !== 1) {
+          return;
+        }
+
+        var kalturaIframeElement = kalturaIframe[0],
+          iframeSrc = kalturaIframeElement.src;
+
+        iframeSrc = iframeSrc
+          .replace('course_id=', 'course_id_old=')
+          .replace('course_id%3D', 'course_id_old%3D')
+          .replace('content_id=', 'content_id_old=')
+          .replace('content_id%3D', 'content_id_old%3D');
+        iframeSrc += '&course_id=' + courseId + '&content_id=' + contentId;
+
+        kalturaIframeElement.src = iframeSrc;
+      });
+    };
+
+    var addCourseIdIfMissing = function (courseId) {
+      var items = Array.from(document.querySelectorAll("a[href*='viewContent1_Iframe']"));
+      items = items.concat(Array.from(document.querySelectorAll("a[href*='LtiMashupPlayIframeWrapper']")));
+      items = items.concat(Array.from(document.querySelectorAll("iframe[src*='LtiMashupPlayIframeWrapper']")));
+      items.forEach(function (videoLink) {
+        var isIframe = (videoLink.tagName === 'IFRAME');
+        var videoHref = isIframe ? videoLink.src : videoLink.href;
+        var hrefParts = videoHref.split('&');
+        var wrongCourseId = null;
+        hrefParts.forEach(function (part) {
+          part = part.split('=');
+          if (part.length > 1 && part[0] === 'course_id') {
+            if (part[1] !== courseId) { wrongCourseId = part[1]; }
+          }
+        });
+        if (wrongCourseId !== null) { videoHref.replace(wrongCourseId, courseId) }
+        if (videoHref !== undefined && videoHref.indexOf("course_id=") === -1) {
+          videoHref += "&course_id=" + courseId;
+          if (isIframe) { videoLink.src = videoHref }
+          else { videoLink.href = videoHref; }
+        }
+      });
+    };</script>
+  <script type='text/javascript'>addCourseIdIfMissing('_136331_1')</script>
+  <script
+    type="text/javascript">var urlCEvalauation = window.location.protocol + '//' + window.location.host + '/webapps/blackboard/content/contentWrapper.jsp?course_id=_136331_1&displayName=Kursusevaluering'; if (window.location.href != null) { if ((urlCEvalauation != null || urlCEvalauation != undefined) && window.location.href.indexOf(urlCEvalauation) > -1) { GetCourseSidePanel('Kursusevaluering'); } else { if (document.getElementById('dvOuter')) { document.getElementById('dvOuter').style.display = "block"; } } } function GetCourseSidePanel(toolName) { var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function () { if (xhttp.readyState == 4 && xhttp.status == 200) { var data = xhttp.response; if (data != null) { var url = window.location.protocol + '//' + window.location.host + '/webapps/blackboard/content/contentWrapper.jsp?course_id=_136331_1&displayName=' + toolName; if (window.location.href != null && window.location.href.indexOf(url) > -1) { var iframeBreadCrumb = '<iframe id="orientationFrame" marginheight="5"  frameborder="0" scrolling="no" marginwidth="0" name="orientationFrame" title="Orientation Bar" style="width:100%; height:40px" src="' + document.getElementById('orientationFrame').src + '"></iframe>'; var iframeCode = '<iframe id="contentFrame" frameborder="0" name="content" title="&nbsp;" style="display: block; width: 100%; height: 100%;"  src="' + document.getElementById('contentFrame').src + '" ></iframe>'; document.getElementById('globalNavPageContentArea').remove(); var mainDiv = '<div id="locationPane" class="locationPane" style="height: 100%">'; mainDiv = mainDiv + '<div class="navigationPane" style="height: 100%;" id="navigationPane">' + data + '</div>'; mainDiv = mainDiv + '<div  class="contentPane" style="height: 100%;" id="contentPanel">'; mainDiv = mainDiv + '<div class="shadow" style="height: 100%;"> <div class="editmodeWrapper" style="height: 100%;"> <div id="content" class="contentBox" style="height: 100%;"> ' + iframeCode + '</div></div>'; mainDiv = mainDiv + '</div>'; mainDiv = mainDiv + '</div>'; mainDiv = mainDiv + '</div>'; var elemDiv = document.createElement('div'); elemDiv.id = 'dvBlueLoginTasks'; elemDiv.style.height = '100%'; elemDiv.innerHTML = mainDiv; document.body.appendChild(elemDiv); } } } }; xhttp.open('GET', window.location.protocol + '//' + window.location.host + '/webapps/blackboard/content/courseMenu.jsp?course_id=_136331_1&newWindow=true', true); xhttp.setRequestHeader('Accept', 'application/json'); xhttp.send(); } function DisableCourseLink() { var list = document.getElementById('courseMenuPalette_contents').getElementsByTagName('a'); if (list != null || list != undefined) { for (var i = 0; i <= list.length - 1; i++) { if (list[i].getElementsByTagName('span')[0].title.toLowerCase() != 'kursusevaluering') { list[i].setAttribute('href', 'javascript:void(0)'); if (document.getElementById('dvOuter')) { document.getElementById('dvOuter').style.display = 'none'; } list[i].onclick = blockCourseNav; } } } } function blockCourseNav() { document.getElementById('dvOuter').style.display = 'block'; } if (window.location.href.toLowerCase().indexOf('bluelti.jsp') != -1) { var dv = document.getElementById('globalNavPageNavArea'); if (dv != null) { dv.style.display = 'none'; } }</script>
+  <script
+    type='text/javascript'>  (function () { function async_load() { var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '/webapps/ee-Eesypluginv2-BBLEARN/loader2.jsp'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); } if (window.attachEvent) window.attachEvent('onload', async_load); else window.addEventListener('load', async_load, false); })(); </script>
+
+
+  <script
+    type="text/javascript">page.bundle.addKey('inlineconfirmation.close', 'Close'); page.bundle.addKey('inlineconfirmation.refresh', 'Refresh'); page.bundle.addKey('hidden.link.close.menu', 'End of menu. Click to return to associated item.'); page.bundle.addKey('hidden.link.close.form', 'End of form. Click to return to associated item.'); page.bundle.addKey('lightbox.loading', 'Loading...'); page.bundle.addKey('yt.stopped', 'Stopped:'); page.bundle.addKey('yt.playing', 'Playing:'); page.bundle.addKey('yt.cued', 'Cued:'); page.bundle.addKey('yt.buffering', 'Buffering:'); page.bundle.addKey('yt.paused', 'Paused:'); page.bundle.addKey('yt.ended', 'Ended:'); page.bundle.addKey('yt.play', 'Play'); page.bundle.addKey('yt.pause', 'Pause'); page.bundle.addKey('yt.mute', 'Mute'); page.bundle.addKey('yt.unmute', 'Unmute'); page.bundle.addKey('lightbox.overlay', '{0} has been opened as a lightbox overlaying the current page.'); page.bundle.addKey('display.playerControls', 'Player Controls'); page.bundle.addKey('display.videoPlayerControls', 'Video Player Controls'); page.bundle.addKey('display.play', 'Play'); page.bundle.addKey('display.stop', 'Stop'); page.bundle.addKey('display.volumeUp', 'Volume Up'); page.bundle.addKey('display.volumeDown', 'Volume Down'); page.bundle.addKey('display.mute', 'Mute'); page.bundle.addKey('display.videoStatus', 'Video Status'); page.bundle.addKey('display.closePlayerControls', 'Close Player Controls'); page.bundle.addKey('display.embeddedVideoPlayer', 'Embedded Video Player'); page.bundle.addKey('display.of', 'of'); page.bundle.addKey('display.view.on.flickr', 'View Photo on Flickr'); page.bundle.addKey('mashups.content.data.msg', 'We are unable to display the mashup content. This happens if the system detects an invalid URL. Remove the mashup item and try again to resolve this issue.'); page.bundle.addKey('contextmenu.frame.title', 'Menu frame'); page.bundle.addKey('frameset.contentframe.title', 'Content'); page.bundle.addKey('common.pair.paren', '{0} ({1})'); page.bundle.addKey('coursemenu.show', 'Show Course Menu'); page.bundle.addKey('coursemenu.hide', 'Hide Course Menu'); page.bundle.addKey('dynamictree.expand', 'Expand'); page.bundle.addKey('dynamictree.collapse', 'Collapse'); page.bundle.addKey('dynamictree.expand.folder', 'Expand {0} tree folder'); page.bundle.addKey('dynamictree.collapse.folder', 'Collapse {0} tree folder'); page.bundle.addKey('dragdrop.accessible.error.chooseOption', 'Select an item first.'); page.bundle.addKey('dragdrop.accessible.empty', 'No items available to reposition.'); page.bundle.addKey('dragdrop.accessible.complete', 'Items have been reordered.'); page.bundle.addKey('dragdrop.accessible.complete.nochange', 'No ordering changes made.'); page.bundle.addKey('closeStr', 'Close'); page.bundle.addKey('moreOptionsStr', 'Click to see options'); page.bundle.addKey('hiddenStr', 'This link is hidden from students'); page.bundle.addKey('emptyStr', 'This link has no content'); page.bundle.addKey('entryPointChangeConfirmStr', 'The entry point will be changed to the next available Content'); page.bundle.addKey('subheaderColonStr', 'Subheader {0}'); page.bundle.addKey('confirmQuickEnrollStr', 'You will be given the role: {0}. Proceed?'); page.bundle.addKey('enterSearchKeyStr', 'Enter Search Criteria.'); page.bundle.addKey('courseWelcomePageLbTitle', 'Quick Setup Guide'); page.bundle.addKey('expandCollapse.expand.section.nocolon', 'Expand'); page.bundle.addKey('expandCollapse.collapse.section.nocolon', 'Collapse'); page.bundle.addKey('expandCollapse.expand.section.param', 'Expand {0}'); page.bundle.addKey('expandCollapse.collapse.section.param', 'Collapse {0}'); page.bundle.addKey('tool.activity.description', 'activity updates'); page.bundle.addKey('accessDeniedMsg', 'Access Denied'); page.bundle.addKey('breadcrumbs.expand', 'Click to expand the breadcrumbs');</script>
+  <script type="text/javascript">
+    Event.observe(window, 'load', function () {
+      displayMathImgInline(document.getElementById('content_listContainer').getElementsByTagName('img'));
+    });
+  </script>
+
+  <script type="text/javascript">
+    function markReviewed(itemId) {
+      document.contentForm.rstatus.value = "review";
+      document.contentForm.reviewed_content_id.value = itemId;
+      document.contentForm.submit();
+    }
+
+    function markUnreviewed(itemId) {
+      if (confirm("This will mark the item as unreviewed. Continue?")) {
+        document.contentForm.rstatus.value = "unreview";
+        document.contentForm.reviewed_content_id.value = itemId;
+        document.contentForm.submit();
+      }
+    }
+  </script>
+
+  <script type="text/javascript">
+    var course_id = "_136331_1";
+    var courseTitle = "E20 - Algorithms and Data Structures [520191U004]";
+    var confirmDeleteMenuItemMsg = "Are you sure you want to delete this item?";
+    var confirmQuickUnenrollMsg = "Any user data created while quick-enrolled in this course will be deleted. Proceed?";
+    var confirmQuickEnrollMsg = "You will be given the role: Instructor. Proceed?";
+    var inNewWindow = false;
+    var theCourseMenu;
+  </script>
+
+  <script
+    type='text/javascript'>globalNavigation.init(); Event.observe(window, 'resize', globalNavigation.onResize);</script>
+  <script type="text/javascript">
+    page.bundle.addKey('globalnav.menu.expand', 'Expand\x20Global\x20Nav');
+    page.bundle.addKey('globalnav.menu.collapse', 'Collapse\x20Global\x20Nav');
+
+    function insertSkipLinkAfterBodyStart(referenceNode, newNode, linkContent) {
+      referenceNode.parentNode.insertBefore(newNode, referenceNode);
+      newNode.innerHTML = linkContent;
+    }
+    var skipLink = new Element('a', { id: 'skip-to-content', href: '#content', tabIndex: '1' });
+    var learnBody = document.body.firstChild;
+    var linkContent = '';
+    this.insertSkipLinkAfterBodyStart(learnBody, skipLink, linkContent);
+  </script>
+
+  <script type="text/javascript">
+    page.bundle.addKey('quick_links.link.title', 'Navigate\x20to\x20element\x20\x7B1\x7D\x20of\x20type\x20\x7B2\x7D\x20in\x20\x7B0\x7D\x20frame');
+    page.bundle.addKey('quick_links.lightbox_title', 'Quick\x20Links');
+    page.bundle.addKey('quick_links.link_title', 'Open\x20Quick\x20Links');
+    page.bundle.addKey('quick_links.hotkey.shift', 'Shift');
+    page.bundle.addKey('quick_links.hotkey.control', 'Ctrl');
+    page.bundle.addKey('quick_links.hotkey.alt', 'Alt');
+    page.bundle.addKey('quick_links.hotkey.combination_divider', '\x2B');
+  </script>
+
+  <script type="text/javascript">quickLinks.initialize(['null']);</script>
+  <script type="text/javascript">
+    globalNavMenu.init(true);
+  </script>
+
+  <script
+    type='text/javascript'> social.Profile.MY_PROFILE_TOOL_ID = 'BB-CORE_____myProfile'; social.Profile.MY_PROFILE_TOOL_URI = '/webapps/bb-social-learning-BBLEARN/execute/mybb?cmd=display&toolId=BB-CORE_____myProfile&location='; </script>
+
+  <script type="text/javascript">
+    FastInit.addOnLoad(function () {
+      if (window.DWREngine) {
+        try { DWREngine.beginBatch(); } catch (ignore) { }
+      }
+      page.decoratePageBanner();
+      new genericList.CheckboxRadioController("content_listContainer");
+      page.ContextMenu.hideMenuDiv('023b0c9ae89646078bedf1386a78d9cf');
+      new page.PageHelpToggler(true, 'Help is On: Click to hide page help.', 'Help is Off: Click to show page help.', false);
+      breadcrumbs.rightMostNavItem = 'content';
+      breadcrumbs.rightMostParentURL = '/webapps/blackboard/execute/courseMain?course_id=_136331_1';
+      new page.PageMenuToggler(true, 'courseMenuToggle_136331_1', true);
+      courseMenu.nonceKey = 'blackboard.platform.security.NonceUtil.nonce.ajax';
+      courseMenu.nonceValue = 'bb42aa09-a63f-463b-80a9-70ebc2677c30';
+      new page.PaletteController('courseMenuPalette', 'courseMenu_link', false, false);
+      new page.ItemExpander('mygroups._154281_1_groupExpanderLink', 'mygroups._154281_1_groupContents', 'Expand', 'Collapse', true, '/webapps/bb-group-mgmt-LEARN/execute/group/getGroupMenuItems', 'course_id=_136331_1&group_id=_154281_1&newWindow=false&openInParentWindow=false', 'Expand Gruppe IT - 20', 'Collapse Gruppe IT - 20');
+      new page.ItemExpander('mygroups._154140_1_groupExpanderLink', 'mygroups._154140_1_groupContents', 'Expand', 'Collapse', true, '/webapps/bb-group-mgmt-LEARN/execute/group/getGroupMenuItems', 'course_id=_136331_1&group_id=_154140_1&newWindow=false&openInParentWindow=false', 'Expand Hold IT', 'Collapse Hold IT');
+      new page.PaletteController('myGroups', 'myGroups_link', false, false);
+      theCourseMenu = new courseMenu.CourseMenu('/webapps/blackboard/execute/doCourseMenuAction', '/webapps/blackboard/execute/getCourseMenuContextMenu');
+      welcomeOverlay.initOverlay();
+      tool_service.init('300000', 'Suppress-Session-Timestamp-Update');
+      if (typeof (initEditors) == 'function') { initEditors(); };
+      if (window['org'] && window['org']['owasp']) { org.owasp.esapi.ESAPI.initialize(); };
+      AllyIntegration.initJWT('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJBTExZIiwic3ViIjoiQUxMWV9UT0tFTiIsImZpbGVJZHMiOltdLCJjb3Vyc2VSb2xlIjoidW5wcml2aWxlZ2VkIiwiaXNzIjoiSFRra3V3cExDbzMwamZZWFU0TWRHMjVJR2hvU3l2N1UiLCJleHAiOjE2MDAxNTYyMjksImlhdCI6MTYwMDE1NTkyOSwiY291cnNlSWQiOiJfMTM2MzMxXzEiLCJ1c2VySWQiOiJfMjYxMzMxXzEifQ.8Sie0wCfVozjg7vjWATbLvtq3Hq2DeqP5yRHZUJ4zL8');
+      AllyIntegration.initAllyJSConfigs('prod-eu-central-1.ally.ac', '25');
+      jQuery.getScript('//' + window.ALLY_CFG.baseUrl + '/integration/learn/ally.js');
+      quickLinks.createHelper();
+      if (window.DWREngine) {
+        try { DWREngine.endBatch(); } catch (ignore) { }
+      }
+      BrowserSpecific.registerListeners();
+    });
+  </script>
+
+  <script
+    type="text/javascript">window.NREUM || (NREUM = {}); NREUM.info = { "errorBeacon": "bam.nr-data.net", "licenseKey": "e99ceaa32b", "agent": "", "beacon": "bam.nr-data.net", "applicationTime": 64, "applicationID": "27090811", "transactionName": "YlUEYhdYCkUAWhdfX1sfNUIXTBBFIFoXX19bHwRaBFoPVA5YEVIeQlUEVxVJFxgRVhFCUVkeFUIXTBBFT20CVHdHXxNGJFoQXw5X", "queueTime": 0 }</script>
+
+    <script type="text/javascript" src="./coursePlanTest.js"></script>
+
+  </body>
+
+</html>

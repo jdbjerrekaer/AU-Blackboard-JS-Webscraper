@@ -1,0 +1,17 @@
+{
+  "name": "scraper",
+  "version": "3.5.0",
+  "private": true,
+  "scripts": {
+    "start": "node scraperv3.js",
+    "ads": "node ads.js"
+  },
+  "dependencies": {
+    "emoji-stripper": "^1.0.0",
+    "node-fetch": "^2.6.1",
+    "objects-to-csv": "^1.3.6",
+    "prompt": "^1.0.0",
+    "puppeteer": "^5.2.1",
+    "tabletojson": "^2.0.4"
+  }
+}

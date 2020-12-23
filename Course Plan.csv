@@ -1,0 +1,39 @@
+Week,Day,Lecture,Literature,Slides,Exercises
+Week,Day,Lecture,Literature,Slides,Exercises
+36,Monday31/8,First TA sessions,,,Basic math test Blackboard registration of TA class and handin group (if known) Subscribe to discussion board forums [B] Problems 1.1-1.7
+36,Tuesday1/9,Introduction to Algorithms and Data Structures  10.15-11.00 IT+Hold 2+DV+DA4 11.15-12.00 DA1+DA5+DA6+DA7 12.15-13.00 DA2+DA3+DA8,[B] Section 1.1,intro.pdf,
+36,Friday4/9,"Sorting with swaps, selection sort",[B] Section 1.2-1.3,puzzle.pdf,"[B] Exercises 1.1, 1.2, 1.3, 1.4, 1.5, 1.6"
+37,Tuesday8/9,"Binary and linear search, longest common subsequence, Erdös & Szekeres Theorem, logarithms",[B] Section 1.4-1.7,binarysearch.pdf,"[B] Exercises 1.7, 1.8, Problems 1.9, 1.10 Handin 1: [B] Problem 1.8 (searching infinte list)"
+37,Friday11/9,"Integer arithmetic: Binary and decimal numbers, addition, subtraction, multiplication, division",[B] Section 1.8,numbers.pdf,"[B] Exercises 1.9, 1.10, 1.11, 1.12"
+38,Tuesday15/9,"Induction, invariants",[B] Section 1.9-1.10,induction.pdf,"[B] Exercises 1.13, 1.14, 1.15, 1.16, 1.18 Handin 2: [B] Exercise 1.19 (squared)"
+38,Friday18/9,"Meeting with TA class representatives in Nygaard 395, 11:15-12:00 (Tentative reservation) Analysis tools, RAM model, insertion sort, O-notation",[CLRS] Ch. 1-3.1,ram.pdf,"[CLRS] Exercises 1.2-2, 1.2-3, 3.1-1, 3.1-4, Problems 1-1, 3-3 (ignore functions involving lg*), 3-4(a-e)"
+39,Tuesday22/9,"Mergesort, heapsort, priority queues Introduction to programming exercises","[CLRS] Ch. 2.3, 6",heaps.pdf code.pdf,"[CLRS] Exercises 6.1-4, 6.1-5, 6.1-6, 6.3-2, Problems 2-1, (2-4), 6-1 Handin 3: [CLRS] Problem 6-2 (d-ary heap) 
+      Programming Exercises IDue Monday 5/10, 23:59."
+39,Friday25/9,"Quicksort, median, randomized selection","[CLRS] Ch. 7, 9.1-9.2",quicksort.pdf,"[CLRS] Exercises 7.1-2, 7.2-3, 7.3-2, Problem 9-1"
+40,Tuesday29/9,"Lower bound for comparison based sorting, counting sort, radix sort, bucket sort",[CLRS] Ch. 8,sorting.pdf,"[CLRS] Exercises 8.1-1, 8.1-3, 8.2-4, 8.3-4"
+40,Friday2/10,Stacks and queues,"[CLRS] Ch. 10.1-10.2, 10.4",stacks.pdf,"[CLRS] Exercises 10.1-2, 10.1-5, 10.2-7, Problems 10-1"
+41,Tuesday6/10,Hashing,[CLRS] Ch. 11.1-11.4,hashing.pdf,"[CLRS] Exercises 11.2-2, 11.2-5, 11.4-1 Handin 4: [CLRS] Problem 6-3 (Young tableaus)"
+41,Friday9/10,"Search trees (an unbalanced search tree implementation: Node.java, SearchTree.java)",[CLRS] Ch. 12.1-12.3,searchtrees.pdf,"[CLRS] Exercises 12.1-5, 12.2-4"
+42,Fall break,,,,
+43,Tuesday20/10,"Balanced search trees: Red-black trees (a red-black tree implementation: RedBlackNode.java, RedBlackTree.java)",[CLRS] Ch. 13,redblack.pdf,"[CLRS] Exercises 13.1-5, 13.1-6, 13.2-2, 13.3-2, Problem (13-2) Handin 5: [CLRS] Problems 12-2 (radix trees)"
+43,Friday23/10,"Augmented search trees: Dynamic rank, interval trees, Fenwick trees",[CLRS] Ch. 14,augmented.pdf,"[CLRS] Exercises 14.1-5, 14.1-7, 14.3-4, 14.3-6, Problem 14-1 Programming Exercises IIDue Monday 2/11 23:59."
+44,Tuesday27/10,Disjoint set union-find,[CLRS] Ch. 21.1-21.3,unionfind.pdf,"[CLRS] Exercises 21.3-3, 21.3-4, 21.3-5"
+44,Friday30/10,Amortized analysis Example of using amortization in data structure design: Self-Adjusting Heaps (DOI: 10.1137/0215004),[CLRS] Ch. 17,amortized.pdf,"[CLRS] Exercises 17.2-3, 17.3-3"
+45,Tuesday3/11,Divide-and-conquer,"[CLRS] Ch. 2.3, 4.2-4.5, Problem 30-1.c",divide.pdf,"[CLRS] Exercises 4.3-1, 4.3-2, Problem 4-1 
+      Handin 6: 
+      (skyline)"
+45,Friday6/11,Deterministic selection (an inplace implementation: DeterministicSelection.java),[CLRS] Ch. 9.3,selection.pdf,"[CLRS] Exercises 9.3-1, 17.3-7"
+46,Tuesday10/11,Dynamic programming (CutCord.java),"[CLRS] Ch. 15.1, 15.3, 15.4, Problem 15-4",dp.pdf,"[CLRS] Exercises 15.1-2, 15.1-3, 15.4-1, 15.4-2, 15.4-4, (15.4-5) Handin 7: 
+      (merging words)"
+46,Friday13/11,"Dynamic programming (continued) Not curriculum: Hirsberger's linear space LCS algorithm, CACM 1975 (DOI: 10.1145/360825.360861)","[CLRS] Ch. 15.2, 15.5",dp.pdf,"[CLRS] Exercises 15.5-2, 15.5-3, Problems 15-2, (15-3) Programming Exercises IIIDue Monday 23/11 23:59."
+47,Tuesday17/11,Greedy algorithms,[CLRS] Ch. 16.1-16.3,greedy.pdf,"[CLRS] Exercises 16.1-4, 16.2-5, 16.3-6"
+47,Friday20/11,"Graph algorithms: Graph representation, breadth first search (BFS)",[CLRS] Ch. 22.1-22.2,graphs.pdf,"[CLRS] Exercises 22.1-1, 22.1-5, 22.1-6, 22.2-1, 22.2-6"
+48,Tuesday24/11,"Graph algorithms: Depth first search (DFS), topological sorting, strongly connected components",[CLRS] Ch. 22.3-22.5,dfs.pdf,"[CLRS] Exercises 22.3-1, 22.3-2, 22.4-2, 22.5-7 Handin 8: [CLRS] Problem 22-4 (reachability)"
+48,Friday27/11,Graph algorithms: Minimum spanning trees (MST),[CLRS] Ch. 23,mst.pdf,"[CLRS] Exercises 23.1-3, 23.1-11, 23.2-2, 23.2-4"
+49,Tuesday1/12,Graph algorithms: Single source shortest path problem (SSSP),[CLRS] Ch. 24.1-24.3,sssp.pdf,"[CLRS] Exercises 24.1-1, 24.1-3, 24.2-4, 24.3-2, 24.3-4, Problems 24-3 Handin 9: 
+      (grid graphs)"
+49,Friday4/12,Graph algorithms: All pairs shortest path problem (APSP),[CLRS] Ch. 25,apsp.pdf,"[CLRS] Excersies 25.1-9, 25.1-10, 25.2-4, 25.2-6 Problem 25-1 Programming Exercises IVDue Monday 14/12 23:59."
+50,Tuesday8/12,"Graph algorithms: Independent set, vertex cover",[CLRS] Ch. 35.1,,
+50,Friday11/12,"Course evaluation follow up, discussion of exam",,eksamen.pdf,
+January,,Questions & answers sessions,,,
+January,,Exam,,,
